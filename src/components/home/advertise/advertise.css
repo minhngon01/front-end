@@ -1,0 +1,12 @@
+.advertise-img{
+  height:400px;
+  object-fit: cover;
+}
+.advertise{
+  height:400px;
+}
+
+.read-more{
+  border-style:solid;
+  border-radius: 30px;
+}

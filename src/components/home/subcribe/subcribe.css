@@ -1,0 +1,7 @@
+.input-box{
+  width:450px;
+  border-style: solid;
+  border-color: aliceblue;
+  border-width:3px;
+  border-radius: 10px;
+}
