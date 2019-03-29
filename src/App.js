@@ -7,14 +7,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './components/home/Home';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faIgloo,faStar, faShoppingCart, faSearch } from '@fortawesome/free-solid-svg-icons'
+import { faIgloo,faStar, faCartPlus, faSearch} from '@fortawesome/free-solid-svg-icons'
 
-library.add(faIgloo,faStar,faShoppingCart, faSearch);
+library.add(faIgloo,faStar, faSearch,faCartPlus);
 class App extends Component {
   render() {
     return (
       <div className="App">
-
         <BrowserRouter>
           <div className="App">
             <Header/>
