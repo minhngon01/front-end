@@ -12,7 +12,7 @@ class Search extends Component{
           <div className="search-box d-flex p-2 m-4">
               <div className="dropdown">
                 <button className="btn  dropdown-toggle m-0 border-0 " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Dropdown button
+                  All Categories
                 </button>
                 <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
                   <a className="dropdown-item" href="#">Action</a>
@@ -20,14 +20,17 @@ class Search extends Component{
                   <a className="dropdown-item" href="#">Something else here</a>
                 </div>
               </div>
-              <input type="text" className="form-control border-0 flex-item-1" placeholder=""/>
+              <input type="text" className="form-control border-0 flex-item-1" placeholder="Search for product"/>
           </div>
 
           <div className="cart d-flex">
               <i className="fas fa-shopping-cart fa-3x mt-4"></i>
-              <div className="mt-4 ">
+              <div className="cart">
                   Your cart<br/>
-                  $1.095,0
+                  $0,00
+              </div>
+              <div class="dropdown-content">
+                <p> No products in your cart </p>
               </div>
           </div>
       </div>
