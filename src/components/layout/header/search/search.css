@@ -30,9 +30,6 @@
 .search-box input{
 }
 
-
-
-
 .dropdown-content {
   display: none;
   background-color: #f9f9f9;
@@ -53,8 +50,8 @@
 .cart-box:hover {
   cursor:pointer;
 }
-.cart-box:hover .number-products{
 
+.cart-box:hover .number-products{
     color: #FFF;
     background-color: #000;
 }
@@ -107,11 +104,8 @@
 	top: 60px;
 }
 
-<<<<<<< HEAD
 @keyframes push{
 	0% {opacity: 0}
-  	100%{transform: translateY(10px); opacity: 1;}
+  100%{transform: translateY(-50px); opacity: 1;}
 }
-=======
-}
->>>>>>> 8589272cfe55003a3af6961bd1017e282f3fc675
+
