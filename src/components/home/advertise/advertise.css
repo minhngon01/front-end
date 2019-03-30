@@ -1,10 +1,17 @@
-.advertise-img{
+.advertise-img-div{
   height:550px;
-  object-fit: cover;
+  background: url(https://pixelz.cc/wp-content/uploads/2018/10/apple-iphone-xs-uhd-4k-wallpaper.jpg);
+  background-position: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .advertise{
   height:550px;
 }
+.advertise .card{
+  background-color: #000!important;
+}
+
 .title-advertise{
   padding: 0;
   margin: 0;

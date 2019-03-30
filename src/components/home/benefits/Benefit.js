@@ -1,4 +1,6 @@
 import React,{Component} from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 // import "./advertise.css"
 class Advertise extends Component{
   render(){
@@ -8,8 +10,8 @@ class Advertise extends Component{
              <thead>
                <tr >
                  <td scope="col ">
-                     <div className="d-flex m-4 py-4">
-                         <i className="fas fa-home fa-3x pr-4"></i>
+                     <div className="d-flex m-4 py-3">
+                        <FontAwesomeIcon className="icon-cart pr-2" icon="home" size="3x" color=""/>
                          <div>
                          Home Shipping<br/>
                          Free for all order
@@ -17,8 +19,8 @@ class Advertise extends Component{
                      </div>
                    </td>
                  <td scope="col">
-                     <div className="d-flex m-4 py-4">
-                         <i className="far fa-paper-plane fa-3x pr-4 "></i>
+                     <div className="d-flex m-4 py-3">
+                        <FontAwesomeIcon className="icon-cart pr-2" icon="paper-plane" size="3x" color=""/>
                          <div>
                              100% Refund<br/>
                              Cash Back
@@ -26,8 +28,8 @@ class Advertise extends Component{
                      </div>
                    </td>
                  <td scope="col">
-                     <div className="d-flex m-4 py-4">
-                         <i className="fas fa-headset fa-3x pr-4"></i>
+                     <div className="d-flex m-4 py-3">
+                         <FontAwesomeIcon className="icon-cart pr-2" icon="headset" size="3x" color=""/>
                          <div>
                              Clients'Support<br/>
                              Fast service
@@ -35,8 +37,8 @@ class Advertise extends Component{
                      </div>
                  </td>
                  <td scope="col">
-                     <div className="d-flex m-4 py-4">
-                         <i className="fas fa-rocket fa-3x pr-4"></i>
+                     <div className="d-flex m-4 py-3">
+                         <FontAwesomeIcon className="icon-cart pr-2" icon="rocket" size="3x" color=""/>
                          <div>
                              Fast Delivery<br/>
                              Best service
