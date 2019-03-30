@@ -30,9 +30,6 @@
 .search-box input{
 }
 
-
-
-
 .dropdown-content {
   display: none;
   background-color: #f9f9f9;
@@ -53,8 +50,8 @@
 .cart-box:hover {
   cursor:pointer;
 }
-.cart-box:hover .number-products{
 
+.cart-box:hover .number-products{
     color: #FFF;
     background-color: #000;
 }
@@ -92,12 +89,12 @@
 
 .dropdown-content {
   display: none;
-  position: absolute;
   background-color: #f9f9f9;
-  min-width: 160px;
+  min-width: 150px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   padding: 12px 16px;
   z-index: 1;
+  animation: push 1s ease forwards;
 }
 
 .cart:hover .dropdown-content{
@@ -105,5 +102,10 @@
 	position: absolute;
 	right: -50px;
 	top: 60px;
-
 }
+
+@keyframes push{
+	0% {opacity: 0}
+  100%{transform: translateY(-50px); opacity: 1;}
+}
+
