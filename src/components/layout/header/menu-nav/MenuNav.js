@@ -1,61 +1,47 @@
 import React,{Component} from 'react';
-
+import './menuNav.css';
 class MenuNav extends Component{
   render(){
     return(
-      <div class="container third-navigate">
-          <ul class="nav nav-pills">
+      <div className="container third-navigate pt-4 px-5">
+          <ul className="nav nav-pills">
 
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
-                  <div class="dropdown-menu">
-                      <a class="dropdown-item">Action</a>
-                      <a class="dropdown-item">Action</a>
-                      <a class="dropdown-item">Action</a>
-                      <a class="dropdown-item">Action</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item">Action</a>
+              <li className="nav-item">
+                  <a className="nav-link" href="#">Shop</a>
+              </li>
+
+
+              <li className="dropdown-item-nav nav-item" >
+                  <a className="nav-link" href="#">Feature</a>
+                  <div className="dropdown-modify dropdown-shortcodes">
+                      <a className="dropdown-item-modify">Action</a>
+                      <a className="dropdown-item-modify">Action</a>
+                      <a className="dropdown-item-modify">Action</a>
+                      <a className="dropdown-item-modify">Action</a>
+                      <a className="dropdown-item-modify">Action</a>
                   </div>
               </li>
 
-              <li class="nav-item dropdown" >
-                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Feature</a>
-                  <div class="dropdown-menu">
-                      <a class="dropdown-item">Action</a>
-                      <a class="dropdown-item">Action</a>
-                      <a class="dropdown-item">Action</a>
-                      <a class="dropdown-item">Action</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item">Action</a>
+              <li className="nav-item dropdown-item-nav" >
+                  <a className="nav-link" href="#">Shortcodes</a>
+                  <div className="dropdown-modify dropdown-shortcodes">
+                      <a className="dropdown-item-modify">Action</a>
+                      <a className="dropdown-item-modify">Action</a>
+                      <a className="dropdown-item-modify">Action</a>
+                      <a className="dropdown-item-modify">Action</a>
+                      <a className="dropdown-item-modify">Action</a>
                   </div>
               </li>
 
-              <li class="nav-item dropdown" >
-                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Shortcodes</a>
-                  <div class="dropdown-menu">
-                      <a class="dropdown-item">Action</a>
-                      <a class="dropdown-item">Action</a>
-                      <a class="dropdown-item">Action</a>
-                      <a class="dropdown-item">Action</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item">Action</a>
+              <li className="nav-item dropdown-item-nav" >
+                  <a className="nav-link"href="#">Post Types</a>
+                  <div className="dropdown-modify dropdown-post-types">
+                      <a className="dropdown-item-modify">Action</a>
+                      <a className="dropdown-item-modify">Action</a>
+                      <a className="dropdown-item-modify">Action</a>
+                      <a className="dropdown-item-modify">Action</a>
+                      <a className="dropdown-item-modify">Action</a>
                   </div>
-              </li>
-
-              <li class="nav-item dropdown" >
-                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Post Types</a>
-                  <div class="dropdown-menu">
-                      <a class="dropdown-item">Action</a>
-                      <a class="dropdown-item">Action</a>
-                      <a class="dropdown-item">Action</a>
-                      <a class="dropdown-item">Action</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item">Action</a>
-                  </div>
-              </li>
-
-              <li class="nav-item mt-2" >
-                  <a href="#">Shop</a>
               </li>
           </ul>
       </div>

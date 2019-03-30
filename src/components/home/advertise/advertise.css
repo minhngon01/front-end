@@ -1,12 +1,45 @@
 .advertise-img{
-  height:400px;
+  height:550px;
   object-fit: cover;
 }
 .advertise{
-  height:400px;
+  height:550px;
 }
-
+.title-advertise{
+  padding: 0;
+  margin: 0;
+}
 .read-more{
   border-style:solid;
   border-radius: 30px;
+}
+
+.card-img-overlay h1{
+  font-size: 70px;
+  font-weight: 300;
+  color: rgb(255,255,255);
+}
+
+.card-img-overlay p{
+  margin: 0px;
+  padding:0px;
+  font-size: 30px;
+  font-weight: 240;
+  color: rgb(193,191,192);
+}
+
+.button-readmore{
+  margin-top:20px;
+  border-color: #FFF;
+  border-width: 0;
+  border-radius: 20px;
+  background-color:rgb(51,90,246);
+  padding:10px 25px 10px;
+  color: #FFF;
+}
+
+.button-readmore:hover{
+  background-color: #FFF;
+  color:#000;
+  cursor: pointer;
 }

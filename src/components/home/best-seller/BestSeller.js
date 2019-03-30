@@ -66,7 +66,7 @@ class BestSeller extends Component{
                         // </div>
                       }
                       </blockquote>
-                    </div>
+              </div>
               <div className="card card-product col-sm m-3 p-3" >
                   <img className="card-img-top" src="https://devicer.cmsmasters.net/wp-content/uploads/2015/05/6.jpg" alt="Card image cap"/>
                   <blockquote className="blockquote mb-0 card-body text-center">
