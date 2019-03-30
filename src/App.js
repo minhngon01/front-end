@@ -5,11 +5,11 @@ import Header from './components/layout/header/Header';
 import Bottom from './components/layout/bottom/Bottom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './components/home/Home';
+import Shop from './components/shop/Shop';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faIgloo,faStar, faCartPlus, faSearch} from '@fortawesome/free-solid-svg-icons'
-
-library.add(faIgloo,faStar, faSearch,faCartPlus);
+import { faIgloo,faStar, faCartPlus, faSearch,faHome,faPaperPlane,faHeadset,faRocket,faHeart,faRecycle} from '@fortawesome/free-solid-svg-icons'
+library.add(faIgloo,faStar, faSearch,faCartPlus,faHome,faPaperPlane,faHeadset,faRocket,faHeart,faRecycle);
 class App extends Component {
   render() {
     return (
@@ -19,6 +19,7 @@ class App extends Component {
             <Header/>
             <Switch>
               <Route exact path = "/" component={Home} />
+              <Route path="/shop" component={Shop}/>
             </Switch>
           <Bottom/>
           </div>
