@@ -1,5 +1,20 @@
+body{
+  text-align: left;
+}
+
 .filter{
   width:200px;
+}
+
+.filter-button:hover{
+  background-color: blue;
+}
+
+.app{
+  width : 150%;
+  margin-left:-15px ;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .search-products-shop{
@@ -8,43 +23,49 @@
   border-color:lightgrey;
   border-radius: 25px;
   padding: 10px 10px 10px 8px;
+  width: 150%;
+  height: 50px;
+  margin-left: -5px;
+  margin-top: 15px;
 }
 
 .input-search-shop{
-  margin: 0;
+  margin:0;
   padding:0;
   border-width:0px;
   width:90%;
 }
 
-.product-categories{
-  border-style: solid;
-  border-width: 1px;
-  border-color:lightgrey;
-  padding: 10px 10px 10px 8px;
-  border-radius: 8px;
-
-}
-
 .input-categories-shop{
-  border-width:0px;
-  width:90%;
-}
-
-.filter-by-price{
+  border-style:solid;
   border-width:1px;
-  border-top-style: solid;
+  border-color:lightgrey;
+  border-radius: 25px;
+  padding: 10px 10px 10px 8px;
+  width: 150%;
+  height: 50px;
 }
 
-.filter-button{
-  border-style: solid;
-  border-width:0px;
-  border-radius: 25px;
-  padding: 3px 10px 3px 10px;
-  background-color: grey;
-  color:white;
-  width:50%;
+.filter-button {
+    margin-top: 20px;
+    border-color: #FFF;
+    border-width: 0;
+    border-radius: 20px;
+    background-color: gray;
+    padding: 10px 25px 10px;
+    color: white;
 }
 /* .search-products input:clicked{
   border-color: black;
 } */
+
+.list-product{
+  background-image: url(https://cellphones.com.vn/media/catalog/product/cache/7/image/9df78eab33525d08d6e5fb8d27136e95/2/_/2_29_3.jpg);
+  list-style: none;
+  margin-left: -20px;
+}
+
+
+
+
+

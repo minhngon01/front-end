@@ -34,20 +34,20 @@ import Filter from './filter/Filter';
 }
 */
 
-
-
-
 class Shop extends React.Component{
   render(){
     return(
       <div className="container">
         <div className="row">
+
           <div className="col-9">
             <Products/>
           </div>
+
           <div className="col-3">
             <Filter/>
           </div>
+
         </div>
     </div>
     )
