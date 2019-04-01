@@ -7,7 +7,7 @@ class MenuNav extends Component{
           <ul className="nav nav-pills">
 
               <li className="nav-item">
-                  <a className="nav-link" href="#">Shop</a>
+                  <a className="nav-link" href="../../../../shop/Shop.js">Shop</a>
               </li>
 
 
