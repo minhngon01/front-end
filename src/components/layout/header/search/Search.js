@@ -1,13 +1,13 @@
 import React,{Component} from 'react';
 import "./search.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
+import {Link} from 'react-router-dom';
 class Search extends Component{
   render(){
     return(
       <div className="container second-navigate d-flex flex-row pt-3 align-items-center">
           <div className="logo-brand">
-              <img className="logo-brand-img card-img-top"  src="https://devicer.cmsmasters.net/wp-content/uploads/2018/03/device-home-1-logo-retina.png" alt="Card image cap"/>
+              <Link to="/"><img className="logo-brand-img card-img-top"  src="https://devicer.cmsmasters.net/wp-content/uploads/2018/03/device-home-1-logo-retina.png" alt="Card image cap"/></Link>
           </div>
 
 

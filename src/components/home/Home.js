@@ -7,6 +7,7 @@ import DealOfTheDay from "./deal-of-the-day/DealOfTheDay"
 import Subcribe from "./subcribe/Subcribe";
 import RecentProduct from "./recent-product/RecentProduct"
 import NewProduct from "./new-product/NewProduct";
+import PopularNew from "./popular-new/PopularNew";
 class Home extends Component{
   render(){
     return(
@@ -18,6 +19,7 @@ class Home extends Component{
         <RecentProduct/>
         <DealOfTheDay/>
         <BestSeller/>
+        <PopularNew/>
         <Subcribe/>
       </div>
     )

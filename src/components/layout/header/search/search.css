@@ -79,6 +79,7 @@
   top:-10%;
   left:27%;
   background-color: rgb(51,60,246);
+  padding-left: 7px;
 }
 
 .cart {
@@ -108,4 +109,3 @@
 	0% {opacity: 0}
   100%{transform: translateY(-50px); opacity: 1;}
 }
-

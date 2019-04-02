@@ -1,5 +1,5 @@
 import React from 'react';
-import Cart from './cart/Cart';
+import Cart from '../../Fragment/CartFragment/cart/Cart';
 class Products extends React.Component{
   render(){
     return(
@@ -29,7 +29,7 @@ class Products extends React.Component{
           <div className="col-sm-4">
             <Cart/>
           </div>
-          
+
         </div>
       </div>
     )

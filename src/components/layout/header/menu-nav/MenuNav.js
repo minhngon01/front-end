@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import './menuNav.css';
+import {Link} from 'react-router-dom'
 class MenuNav extends Component{
   render(){
     return(
@@ -7,18 +8,18 @@ class MenuNav extends Component{
           <ul className="nav nav-pills">
 
               <li className="nav-item">
-                  <a className="nav-link" href="../../../../shop/Shop.js">Shop</a>
+                  <Link className="nav-link" to="/shop">Shop</Link>
               </li>
 
 
               <li className="dropdown-item-nav nav-item" >
                   <a className="nav-link" href="#">Feature</a>
                   <div className="dropdown-modify dropdown-shortcodes">
-                      <a className="dropdown-item-modify">Action</a>
-                      <a className="dropdown-item-modify">Action</a>
-                      <a className="dropdown-item-modify">Action</a>
-                      <a className="dropdown-item-modify">Action</a>
-                      <a className="dropdown-item-modify">Action</a>
+                      <Link className="dropdown-item-modity" to="/aboutus"> About Us</Link>
+                      <Link className="dropdown-item-modity" to="/news"> News</Link>
+                      <Link className="dropdown-item-modity" to="contacts"> Contacts</Link>
+                      <Link className="dropdown-item-modity" to="FAQ"> FAQ</Link>
+                      <Link className="dropdown-item-modity" to="sale"> Sale</Link>
                   </div>
               </li>
 

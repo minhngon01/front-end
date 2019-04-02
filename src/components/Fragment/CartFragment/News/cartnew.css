@@ -1,0 +1,66 @@
+.cart-news{
+  position:relative;
+}
+
+.img-news{
+  background-image: url(https://devicer.cmsmasters.net/wp-content/uploads/2017/06/blog6-2.jpg);
+  background-position: center;
+  background-size:contain;
+  height:250px;
+}
+
+.type-news{
+  color:blue;
+  font-size:13px;
+  font-weight: bold;
+  padding: 0px 0px 10px 0px;
+}
+.type-news:hover{
+  color:grey;
+  cursor:pointer;
+}
+
+.title-news{
+  font-weight: bold;
+  color:black;
+  font-size:16px;
+  padding: 0px 0px 10px 0px;
+
+}
+
+.title-news:hover{
+  color:blue;
+  cursor:pointer;
+}
+
+.date-news{
+  color: grey;
+  font-size:13px;
+}
+
+
+
+.info-news{
+  margin-top:20px;
+  display:flex;
+  flex-direction:row;
+}
+
+.info-detail{
+
+  align-content: center;
+  flex-grow: 1;
+}
+.number-comments{
+  color:grey;
+  padding-left:5px;
+}
+.comment-news{
+  display:flex;
+  flex-direction:row;
+}
+
+h1{
+  font-weight: 330;
+  margin: 30px 0px 40px 0px;
+}
