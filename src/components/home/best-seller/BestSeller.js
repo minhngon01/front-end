@@ -44,7 +44,8 @@ class BestSeller extends Component{
                     <Cart/>
                   </Slider>
           </div>
-      </div>
+        </div>
+
     )
   }
 

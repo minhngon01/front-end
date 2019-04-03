@@ -4,6 +4,7 @@ import './filter.css';
 import Slider, {Range} from 'rc-slider';
 import 'rc-slider/assets/index.css';
 import Select from 'react-select';
+import StarRating from "../../Fragment/StarRating/StarRating";
 
 const devices = [
   { label: "Apple", value: 1 },
@@ -35,42 +36,111 @@ class Filter extends React.Component{
           <br/>
 
 
-          <h5>Filter by price</h5> 
+          <h5>Filter by price</h5>
           <Range className ="filter">
           </Range>
           <div class="price_label">
-            Price: 
+            Price:
             <span class="from">
                 <span>$</span>20
-            </span> — 
+            </span> —
             <span class="to">
                 <span>$</span>1,120  <button type="submit" class="filter-button"><b>FILTER</b></button>
-            </span>   
+            </span>
           </div>
 
 
           <br/>
-          
+          <br/>
           <h5>Products</h5>
 
           <div className="products-shop">
-          <ul className = "list-product">
-            <li className="product-shop-img">
-              <div className="rating-product">
-                <FontAwesomeIcon className="icon-star" icon="star" color="DarkSlateGrey"/>
-                <FontAwesomeIcon className="icon-star" icon="star" color="DarkSlateGrey"/>
-                <FontAwesomeIcon className="icon-star" icon="star" color="DarkSlateGrey"/>
-                <FontAwesomeIcon className="icon-star" icon="star" color="DarkSlateGrey"/>
-                <FontAwesomeIcon className="icon-star" icon="star" color="DarkSlateGrey"/>
+            <ul className = "products-list-filter">
 
-              </div>
-            </li>
-            <li className="product-shop-img"></li>
-            <li className="product-shop-img"></li>
-          </ul>
+
+              <li className = "container">
+                  <a className = "box-product">
+                    <img className = "img-product-filter"src = "https://cellphones.com.vn/media/catalog/product/cache/7/image/9df78eab33525d08d6e5fb8d27136e95/6/f/6fda03fbdf0073672946e3a58bf935da.jpg"/>
+                  </a>
+
+                  <div className = "row12">
+                    <div class="price">
+                      <span class="amount">
+                      <span>
+                        <span class="currencySymbol">
+                          $
+                        </span>
+                      </span>
+                          55.00
+                      </span>
+                    </div>
+                    <div className={"rating-product"} >
+                      <FontAwesomeIcon className="icon-star" icon="star" color="DarkSlateGrey"/>
+                      <FontAwesomeIcon className="icon-star" icon="star" color="DarkSlateGrey"/>
+                      <FontAwesomeIcon className="icon-star" icon="star" color="DarkSlateGrey"/>
+                      <FontAwesomeIcon className="icon-star" icon="star" color="DarkSlateGrey"/>
+                      <FontAwesomeIcon className="icon-star" icon="star" color="DarkSlateGrey"/>
+                    </div>
+                  </div>
+              </li>
+
+
+              <li className = "container">
+                <a className = "box-product">
+                    <img className = "img-product-filter"src = "https://cellphones.com.vn/media/catalog/product/cache/7/image/9df78eab33525d08d6e5fb8d27136e95/6/f/6fda03fbdf0073672946e3a58bf935da.jpg"/>
+                  </a>
+
+                  <div className = "row12">
+                    <div class="price">
+                      <span class="amount">
+                      <span>
+                        <span class="currencySymbol">
+                          $
+                        </span>
+                      </span>
+                          55.00
+                      </span>
+                    </div>
+                    <div className={"rating-product"} >
+                      <FontAwesomeIcon className="icon-star" icon="star" color="DarkSlateGrey"/>
+                      <FontAwesomeIcon className="icon-star" icon="star" color="DarkSlateGrey"/>
+                      <FontAwesomeIcon className="icon-star" icon="star" color="DarkSlateGrey"/>
+                      <FontAwesomeIcon className="icon-star" icon="star" color="DarkSlateGrey"/>
+                      <FontAwesomeIcon className="icon-star" icon="star" color="DarkSlateGrey"/>
+                    </div>
+                  </div>
+              </li>
+
+              <li className = "container">
+                <a className = "box-product">
+                    <img className = "img-product-filter"src = "https://cellphones.com.vn/media/catalog/product/cache/7/image/9df78eab33525d08d6e5fb8d27136e95/6/f/6fda03fbdf0073672946e3a58bf935da.jpg"/>
+                </a>
+                  <div className = "row12">
+                    <div class="price">
+                      <span class="amount">
+                      <span>
+                        <span class="currencySymbol">
+                          $
+                        </span>
+                      </span>
+                          55.00
+                      </span>
+                    </div>
+                    <div className={"rating-product"} >
+                      <FontAwesomeIcon className="icon-star" icon="star" color="DarkSlateGrey"/>
+                      <FontAwesomeIcon className="icon-star" icon="star" color="DarkSlateGrey"/>
+                      <FontAwesomeIcon className="icon-star" icon="star" color="DarkSlateGrey"/>
+                      <FontAwesomeIcon className="icon-star" icon="star" color="DarkSlateGrey"/>
+                      <FontAwesomeIcon className="icon-star" icon="star" color="DarkSlateGrey"/>
+                    </div>
+                  </div>
+              </li>
+            </ul>
           </div>
 
           <div className="carts-shop">
+            <h5> Cart </h5>
+            <p> No products in the cart </p>
           </div>
 
       </div>

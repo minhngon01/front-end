@@ -2,6 +2,8 @@ import React from 'react';
 import Cart from '../../Fragment/CartFragment/cart/Cart';
 import ReactPaginate from 'react-paginate';
 import Products from '../products/Products';
+
+
 class Pagination extends React.Component{
   render(){
     return(

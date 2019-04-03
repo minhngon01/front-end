@@ -5,3 +5,11 @@
   border-width:3px;
   border-radius: 10px;
 }
+
+#subscribe-button{
+	color:rgb(0, 0, 255);
+}
+
+#subscribe-button:hover{
+	color: gray;
+}
