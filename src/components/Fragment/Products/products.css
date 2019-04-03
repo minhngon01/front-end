@@ -16,11 +16,6 @@
     max-width: 100%;
 }
 
-.Price{
-  display: inline-flex;
-  margin-top: -100px
-}
-
 .box-product{
   width: 90px;
   height:90px;
@@ -76,4 +71,4 @@
 .products-list-filter{
   float: left;
   list-style: none;
-}
+  width: 275px;}

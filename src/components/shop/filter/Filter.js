@@ -5,6 +5,7 @@ import Slider, {Range} from 'rc-slider';
 import 'rc-slider/assets/index.css';
 import Select from 'react-select';
 import StarRating from "../../Fragment/StarRating/StarRating";
+import Products from "../../Fragment/Products/products";
 
 const devices = [
   { label: "Apple", value: 1 },
@@ -53,77 +54,8 @@ class Filter extends React.Component{
           <br/>
           <br/>
           <h5>Products</h5>
-
-          <div className="products-shop">
-            <ul className = "products-list-filter">
-              <li className = "container">
-                  <a className = "box-product">
-                    <img className = "img-product-filter"src = "https://cellphones.com.vn/media/catalog/product/cache/7/image/9df78eab33525d08d6e5fb8d27136e95/6/f/6fda03fbdf0073672946e3a58bf935da.jpg"/>
-                  </a>
-
-                  <div className = "row12">
-                    <div class="price">
-                      <span class="amount">
-                      <span>
-                        <span class="currencySymbol">
-                          $
-                        </span>
-                      </span>
-                          55.00
-                      </span>
-                    </div>
-                    <div className={"rating-product"} >
-                      <StarRating/>
-                    </div>
-                  </div>
-              </li>
-
-
-              <li className = "container">
-                <a className = "box-product">
-                    <img className = "img-product-filter"src = "https://cellphones.com.vn/media/catalog/product/cache/7/image/9df78eab33525d08d6e5fb8d27136e95/6/f/6fda03fbdf0073672946e3a58bf935da.jpg"/>
-                  </a>
-
-                  <div className = "row12">
-                    <div class="price">
-                      <span class="amount">
-                      <span>
-                        <span class="currencySymbol">
-                          $
-                        </span>
-                      </span>
-                          55.00
-                      </span>
-                    </div>
-                    <div className={"rating-product"} >
-                      <StarRating/>
-                    </div>
-                  </div>
-              </li>
-
-              <li className = "container">
-                <a className = "box-product">
-                    <img className = "img-product-filter"src = "https://cellphones.com.vn/media/catalog/product/cache/7/image/9df78eab33525d08d6e5fb8d27136e95/6/f/6fda03fbdf0073672946e3a58bf935da.jpg"/>
-                </a>
-                  <div className = "row12">
-                    <div class="price">
-                      <span class="amount">
-                      <span>
-                        <span class="currencySymbol">
-                          $
-                        </span>
-                      </span>
-                          55.00
-                      </span>
-                    </div>
-                    <div className={"rating-product"} >
-                      <StarRating/>
-                    </div>
-                  </div>
-              </li>
-            </ul>
-          </div>
-
+          <Products/>
+          
           <div className="carts-shop">
             <h5> Cart </h5>
             <p> No products in the cart </p>

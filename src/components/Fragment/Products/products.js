@@ -1,5 +1,6 @@
 import React, { Component }  from 'react';
 import './products.css';
+import StarRating from '../StarRating/StarRating';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const Products =  (props) => {
@@ -24,11 +25,7 @@ const Products =  (props) => {
                       </span>
                     </div>
                     <div className={"rating-product"} >
-                      <FontAwesomeIcon className="icon-star" icon="star" color="DarkSlateGrey"/>
-                      <FontAwesomeIcon className="icon-star" icon="star" color="DarkSlateGrey"/>
-                      <FontAwesomeIcon className="icon-star" icon="star" color="DarkSlateGrey"/>
-                      <FontAwesomeIcon className="icon-star" icon="star" color="DarkSlateGrey"/>
-                      <FontAwesomeIcon className="icon-star" icon="star" color="DarkSlateGrey"/>
+                      <StarRating/>
                     </div>
                   </div>
               </li>
@@ -51,11 +48,7 @@ const Products =  (props) => {
                       </span>
                     </div>
                     <div className={"rating-product"} >
-                      <FontAwesomeIcon className="icon-star" icon="star" color="DarkSlateGrey"/>
-                      <FontAwesomeIcon className="icon-star" icon="star" color="DarkSlateGrey"/>
-                      <FontAwesomeIcon className="icon-star" icon="star" color="DarkSlateGrey"/>
-                      <FontAwesomeIcon className="icon-star" icon="star" color="DarkSlateGrey"/>
-                      <FontAwesomeIcon className="icon-star" icon="star" color="DarkSlateGrey"/>
+                      <StarRating/>
                     </div>
                   </div>
               </li>
@@ -76,11 +69,7 @@ const Products =  (props) => {
                       </span>
                     </div>
                     <div className={"rating-product"} >
-                      <FontAwesomeIcon className="icon-star" icon="star" color="DarkSlateGrey"/>
-                      <FontAwesomeIcon className="icon-star" icon="star" color="DarkSlateGrey"/>
-                      <FontAwesomeIcon className="icon-star" icon="star" color="DarkSlateGrey"/>
-                      <FontAwesomeIcon className="icon-star" icon="star" color="DarkSlateGrey"/>
-                      <FontAwesomeIcon className="icon-star" icon="star" color="DarkSlateGrey"/>
+                      <StarRating/>
                     </div>
                   </div>
               </li>
