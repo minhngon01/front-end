@@ -14,7 +14,7 @@ class Search extends Component{
           <div className="search-box d-flex ">
               <div className="dropdown">
                 <button className="button-search dropdown-toggle m-0 border-0 " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Dropdown button
+                  All categories
                 </button>
                 <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
                   <a className="dropdown-item" href="#">Action</a>
