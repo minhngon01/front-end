@@ -17,9 +17,9 @@ class MenuNav extends Component{
                   <div className="dropdown-modify dropdown-shortcodes">
                       <Link className="dropdown-item-modity" to="/aboutus"> About Us</Link>
                       <Link className="dropdown-item-modity" to="/news"> News</Link>
-                      <Link className="dropdown-item-modity" to="contacts"> Contacts</Link>
-                      <Link className="dropdown-item-modity" to="FAQ"> FAQ</Link>
-                      <Link className="dropdown-item-modity" to="sale"> Sale</Link>
+                      <Link className="dropdown-item-modity" to="/contacts"> Contacts</Link>
+                      <Link className="dropdown-item-modity" to="/FAQ"> FAQ</Link>
+                      <Link className="dropdown-item-modity" to="/sale"> Sale</Link>
                   </div>
               </li>
 

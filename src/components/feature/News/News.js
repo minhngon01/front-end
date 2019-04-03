@@ -1,16 +1,16 @@
 import React from 'react';
-import './aboutus.css';
+import './news.css';
 // import StarRating from "../../StarRating/StarRating";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-class AboutUs extends React.Component{
+class News extends React.Component{
   render(){
     return(
       <div>
-        About Us
+        News
       </div>
     )
   }
 }
 
-export default AboutUs;
+export default News;

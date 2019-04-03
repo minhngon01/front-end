@@ -1,16 +1,16 @@
 import React from 'react';
-import './aboutus.css';
+import './sale.css';
 // import StarRating from "../../StarRating/StarRating";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-class AboutUs extends React.Component{
+class Sale extends React.Component{
   render(){
     return(
       <div>
-        About Us
+        Sale
       </div>
     )
   }
 }
 
-export default AboutUs;
+export default Sale;
