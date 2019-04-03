@@ -27,15 +27,11 @@ class BestSeller extends Component{
                 <div className="col-sm" >
                     <Cart/>
                 </div>
-                <div className="col-sm" >
-                    <Cart/>
-                </div>
-                <div className="col-sm" >
-                    <Cart/>
+                
                 </div>
             </div>
           </div>
-      </div>
+
     )
   }
 

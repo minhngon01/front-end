@@ -59,13 +59,89 @@ body{
   border-color: black;
 } */
 
-.list-product{
+.products-list-filter{
   background-image: url(https://cellphones.com.vn/media/catalog/product/cache/7/image/9df78eab33525d08d6e5fb8d27136e95/2/_/2_29_3.jpg);
   list-style: none;
   margin-left: -20px;
 }
 
+.products-shop{
+    list-style: none;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    margin-left: -40px;
+}
 
+.img-product-filter{
+    display: inline-block;
+    color: transparent;
+    height: auto;
+    font-size: 0;
+    vertical-align: middle;
+    max-width: 100%;
+}
 
+.Price{
+  display: inline-flex;
+  margin-top: -100px
+}
+
+.box-product{
+  width: 90px;
+  height:90px;
+  border-style:solid;
+  padding:5px;
+  border-width:2px;
+  border-radius:20px;
+  border-color: LightGray;
+  display: inline-block;
+  position: relative;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom:10px;
+}
+
+.products-list-filter img{
+  border-width: 1px;
+  border-style: solid;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  width: 80px;
+  height: 80px;
+  margin: auto !important;
+  position: absolute;
+  left: 0;
+  right: auto;
+  top: 2px;
+  bottom: auto;
+  image-rendering: auto;
+}
+
+.products-list-filter .price{
+  display: block;
+  position: relative;
+  direction: rtl;
+  overflow: hidden;
+}
+
+.star-rating{
+    width: 73px;
+    height: 20px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+.row12{
+  float:right;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.products-list-filter{
+  float: left;
+}
 
 
