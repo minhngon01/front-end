@@ -1,5 +1,5 @@
 import React from 'react';
-import Products from './products/Products';
+import ProductsPagination from './products-pagination/ProductsPagination';
 import Filter from './filter/Filter';
 
 /*
@@ -41,7 +41,7 @@ class Shop extends React.Component{
         <div className="row">
 
           <div className="col-9">
-            <Products/>
+            <ProductsPagination/>
           </div>
 
           <div className="col-3">

@@ -22,7 +22,7 @@ class Home extends Component{
         <BestSeller/>
         <PopularNew/>
         <BrandsLogo/>
-        <Subcribe/>
+        <Subscribe/>
       </div>
     )
   }

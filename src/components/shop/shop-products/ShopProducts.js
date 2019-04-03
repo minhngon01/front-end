@@ -1,7 +1,7 @@
 import React from 'react';
 import Cart from '../../Fragment/CartFragment/cart/Cart';
-import ReactPaginate from 'react-paginate';
-class Products extends React.Component{
+// import ReactPaginate from 'react-paginate';
+class ShopProducts extends React.Component{
   render(){
     return(
       <div className="container">
@@ -36,4 +36,4 @@ class Products extends React.Component{
     )
   }
 }
-export default Products;
+export default ShopProducts;

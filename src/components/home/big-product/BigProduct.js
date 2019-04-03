@@ -10,13 +10,13 @@ class BigProduct extends Component{
       <div className="container">
         <div className="on-sale">
             <div className="row">
-              <div className="col-sm-4 m-0 p-0" >
+              <div className="col-sm-4" >
                 <CartSale/>
               </div>
-              <div className="col-sm-4 m-0 p-0" >
+              <div className="col-sm-4" >
                 <CartSale/>
               </div>
-             <div className="col-sm-4 m-0 p-0">
+             <div className="col-sm-4">
                 <CartSale/>
               </div>
             </div>
