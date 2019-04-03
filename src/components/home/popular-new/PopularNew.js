@@ -2,27 +2,48 @@ import React,{Component} from 'react';
 import "./popularnew.css";
 import News from "../../Fragment/CartFragment/News/News";
 import Slider from "react-slick";
-import "../../../slick/slick.css";
-import "../../../slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 class PopularNew extends Component{
   render(){
-    return(
-      <div className="container">
-        <h1>Popular news</h1>
-        <div className="row">
-          <div className="col-sm">
-            <News/>
-          </div>
-
-          <div className="col-sm">
-            <News/>
-          </div>
-
-          <div className="col-sm">
-            <News/>
-          </div>
+    var settings = {
+      dots: true,
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      pauseOnHover: true,
+      customPaging: i => (
+        <div
+          style={{
+            marginTop : "-420px",
+            marginLeft : "450px",
+            width: "10px",
+            height:"10px",
+            backgroundColor: "grey",
+            border: "0px solid",
+            borderRadius: "50%",
+            position:"absolute",
+            top:"0%"
+          }}
+        >
         </div>
+      )
+    };
+
+    return(
+      <div className="popular-new container">
+        <h1 className="my-5">Popular news</h1>
+         <Slider {...settings}>
+            <News/>
+            <News/>
+            <News/>
+            <News/>
+            <News/>
+            <News/>
+        </Slider>
       </div>
     )
   }

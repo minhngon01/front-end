@@ -5,8 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 class News extends Component{
   render(){
     return(
-      <React.Fragment>
-        <div className="cart-news d-flex flex-column">
+        <div className="cart-news d-flex flex-column mr-5">
           <div className="img-news"/>
           <div className="info-news">
             <div className="info-detail">
@@ -20,7 +19,6 @@ class News extends Component{
             </div>
           </div>
         </div>
-      </React.Fragment>
     )
   }
 }

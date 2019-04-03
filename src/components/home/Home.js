@@ -8,10 +8,11 @@ import Subcribe from "./subcribe/Subcribe";
 import RecentProduct from "./recent-product/RecentProduct"
 import NewProduct from "./new-product/NewProduct";
 import PopularNew from "./popular-new/PopularNew";
+import BrandsLogo from "./brands-logo/BrandsLogo";
 class Home extends Component{
   render(){
     return(
-      <div className="container-fluid">
+      <div className="container-fluid px-0">
         <Advertise/>
         <Benefit/>
         <NewProduct/>
@@ -20,6 +21,7 @@ class Home extends Component{
         <DealOfTheDay/>
         <BestSeller/>
         <PopularNew/>
+        <BrandsLogo/>
         <Subcribe/>
       </div>
     )

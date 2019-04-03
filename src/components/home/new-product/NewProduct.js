@@ -3,7 +3,8 @@ import "./newproduct.css"
 class NewProduct extends Component{
   render(){
     return(
-      <div className="new-product row container">
+      <div className="container">
+      <div className="new-product row">
         <div className="col-sm">
           <div class="card-new-product bg-dark text-white">
             <div class="card-img card-modify card-img-left"  alt="Card image"/>
@@ -27,6 +28,7 @@ class NewProduct extends Component{
             </div>
           </div>
         </div>
+      </div>
     )
   }
 }

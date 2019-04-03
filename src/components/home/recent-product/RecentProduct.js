@@ -11,6 +11,7 @@ class RecentProduct extends Component{
               <li className="nav-item px-4"><a href="#">Top Rated</a></li>
               <li className="nav-item px-4"><a href="#">Sale</a></li>
           </ul>
+          <div className="recent-products-home">
           <div className="row">
             <div className="col-sm">
               <Cart/>
@@ -24,7 +25,9 @@ class RecentProduct extends Component{
             <div className="col-sm">
               <Cart/>
             </div>
-            </div>
+          </div>
+          </div>
+
       </div>
     )
   }

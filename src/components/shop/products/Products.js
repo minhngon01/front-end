@@ -1,5 +1,6 @@
 import React from 'react';
 import Cart from '../../Fragment/CartFragment/cart/Cart';
+import ReactPaginate from 'react-paginate';
 class Products extends React.Component{
   render(){
     return(
