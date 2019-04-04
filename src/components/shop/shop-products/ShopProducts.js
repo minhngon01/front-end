@@ -6,31 +6,12 @@ class ShopProducts extends React.Component{
     return(
       <div className="container">
         <div className="row">
-
-          <div className="col-sm-4">
-            <Cart/>
-          </div>
-
-          <div className="col-sm-4">
-            <Cart/>
-          </div>
-
-          <div className="col-sm-4">
-            <Cart/>
-          </div>
-
-          <div className="col-sm-4">
-            <Cart/>
-          </div>
-
-          <div className="col-sm-4">
-            <Cart/>
-          </div>
-
-          <div className="col-sm-4">
-            <Cart/>
-          </div>
-
+          {this.props.products.map(product => (
+            <div className="col-sm-4">
+              <Cart product={product}/>
+            </div>
+          ))}
+      
         </div>
       </div>
     )

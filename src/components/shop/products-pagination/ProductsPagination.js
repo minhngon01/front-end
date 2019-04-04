@@ -20,7 +20,7 @@ class ProductsPagination extends React.Component{
   render(){
     return(
       <div className="products-shop">
-        <ShopProducts products={this.state.data}/>
+        <ShopProducts products={this.props.products}/>
         <ReactPaginate
           previousLabel={''}
           nextLabel={'>'}
