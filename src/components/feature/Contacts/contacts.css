@@ -13,7 +13,13 @@
 
 .header-contacts {
 	position: relative;
-	margin-top: 20px;
+	margin-top: 15px;
+	margin-bottom: 30px;
+	color: #4a4a4d;
+	word-wrap: break-word;
+    line-height: 32px;
+    font-weight: 300;
+    font-size:38px;
 }
 
 
@@ -31,5 +37,156 @@ hr {
  
 .home {
 	color: gray;
+}
+
+.row-outer{
+	width: 100%;
+    position: relative;
+}
+
+.row-inner{
+	width: 1300px;
+	position: relative;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.column-one-half{
+	width: 47.4%;
+	display: inline-block;
+	position:relative;
+}
+
+.column-one-fourth{
+	width: 47.5%;
+	position: relative;
+	display: inline-block;
+	float:right;
+}
+
+.one-half-heading{
+	font-family: 'Heebo';
+    font-size: 32px;
+    line-height: 32px;
+    color:  #4a4a4d;
+    display: inline-block;
+    margin: 0;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 35px;
+    font-weight: lighter;
+}
+
+.one-half-2-heading{
+	font-family: 'Heebo';
+    font-size: 32px;
+    line-height: 32px;
+    color:  #4a4a4d;
+    display: inline-block;
+    margin: 0;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 35px;
+    font-weight: lighter;
+}
+
+.name-form, .email-form{
+	width: 45.4%;
+	display: inline-block;
+}
+
+.message-form{
+	width: 93.5%;
+	margin-top: 20px;
+}
+
+.send-message{
+	margin-top: 30px;
+	margin-bottom: 60px;
+}
+
+input.contact-name[type=text], textarea{
+	display: block;
+    margin-top: 7px;
+    padding: 12px 20px;
+    border-radius: 75px;
+    width:95%;
+    height:50px;
+    border-style: solid;
+    border-width:2px;
+    border-color:LightGray;
+    z-index: 200;
+    position: relative;
 
 }
+
+input.contact-email[type=text], textarea{
+	display: block;
+    margin-top: 7px;
+    padding: 12px 20px;
+    border-radius: 75px;
+    width:95%;
+    height:50px;
+    border-style: solid;
+    border-width:2px;
+    border-color:LightGray;
+    z-index: 200;
+    position: relative;
+}
+
+input.contact-message[type=text], textarea{
+	display: block;
+    margin-top: 7px;
+    padding: 12px 20px;
+    border-radius: 20px;
+    width:95%;
+    height:300px;
+    border-style: solid;
+    border-width:2px;
+    border-color:LightGray;
+  	position: relative;
+}
+
+input.contact-message[type=text]::placeholder{
+	position: absolute;
+}
+
+input.send-message-button[type=submit]{
+	font-weight: 500;
+    margin-top: 7px;
+    padding: 12px 20px;
+    border-radius: 90px;
+    width:30%;
+    height:50px;
+    border-style: solid;
+    border-width:2px;
+    border-color:LightGray;
+  	position: relative;
+  	background-color: Transparent;
+}
+
+input.send-message-button[type=submit]:hover{
+	background-color: blue;
+	color: white;
+	transition-duration: 0.5s;
+	transition-timing-function: ease-in-out;
+}
+
+.phone-number-contact-heading{
+	margin-bottom: 5px;
+}
+
+.address, .phone, .city{
+	display: block;
+    padding: 9px 0;
+    position: relative;
+    overflow: hidden;
+
+}
+.phone-left, .address-left, .city-left{
+	text-align: left;
+}
+.phone-right, .address-right, .city-right{
+	float: right;
+}
+
