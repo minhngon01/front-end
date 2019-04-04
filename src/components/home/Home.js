@@ -24,7 +24,10 @@ class Home extends Component{
         <BestSeller/>
         <PopularNew/>
         <BrandsLogo/>
+<<<<<<< HEAD
         <AllProduct/>
+=======
+>>>>>>> upstream/master
         <Subscribe/>
       </div>
     )

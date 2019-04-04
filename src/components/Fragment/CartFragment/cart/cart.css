@@ -1,11 +1,13 @@
 .cart-product{
-  width:250px;
-  height:450px;
+  width:100%;
+  height:500px;
   border-style:solid;
   padding:5px;
-  border-width:2px;
+
+  border-width:1px;
   border-radius:20px;
-  border-color: LightGray;
+  border-color: gainsboro;
+
   display: flex;
   flex-direction: column;
   position: relative;
@@ -16,7 +18,6 @@
 }
 
 .image-product{
-  background-image: url(https://devicer.cmsmasters.net/wp-content/uploads/2017/09/13-3.jpg);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -86,6 +87,7 @@
 .cart-product:hover {
   border-color: Blue;
   box-shadow: 3px 1px 3px 3px rgb(0,0,0,0.2);
+  border-width:2px;
 }
 .cart-product:hover .circle-around{
   display: block;

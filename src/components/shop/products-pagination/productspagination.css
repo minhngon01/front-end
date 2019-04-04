@@ -1,0 +1,16 @@
+.pagination{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  border-style: solid;
+  border-width: 1px 0px 0px 0px;
+  border-color: gainsboro;
+
+  margin-top: 50px;
+  padding-top:25px;
+}
+
+.pageSub{
+  margin:0px 40px 30px 0px;
+}
