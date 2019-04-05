@@ -9,6 +9,8 @@ import RecentProduct from "./recent-product/RecentProduct"
 import NewProduct from "./new-product/NewProduct";
 import PopularNew from "./popular-new/PopularNew";
 import BrandsLogo from "./brands-logo/BrandsLogo";
+import AllProduct from "./all-product/AllProduct";
+
 class Home extends Component{
   render(){
     return(
@@ -22,6 +24,7 @@ class Home extends Component{
         <BestSeller/>
         <PopularNew/>
         <BrandsLogo/>
+        <AllProduct/>
         <Subscribe/>
       </div>
     )
