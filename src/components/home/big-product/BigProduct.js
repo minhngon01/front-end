@@ -1,9 +1,6 @@
 import React,{Component} from 'react';
-// import "./bigproduct.css"
-
-
 import CartSale from "../../Fragment/CartFragment/CartSale/CartSale";
-// import cartHOC from "../../Fragment/CartFragment";
+
 class BigProduct extends Component{
 
   saleProducts = [
@@ -46,22 +43,16 @@ class BigProduct extends Component{
   ]
   render(){
     return(
-      <div className="container">
-        <div className="on-sale">
-            <div className="row">
-              {
-                this.saleProducts.map(product => {
-
-                  return(
-                  <div className="col-sm-4">
-                    <CartSale product={product}/>
-                  </div>
-                  )
-              }
-              )}
-
+    <div className="container">
+      <div className="on-sale">
+        <div className="row">
+          {this.saleProducts.map(product => (
+            <div className="col-sm-4">
+              <CartSale product={product}/>
             </div>
+          ))}
         </div>
+      </div>
     </div>
     )
   }

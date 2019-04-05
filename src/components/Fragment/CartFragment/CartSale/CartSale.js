@@ -11,7 +11,6 @@ const CartSale = (props) => {
   }
 
   return (
-
     <React.Fragment>
       <div className="cart-product-sale">
       <div className="card-img-top-modify-sale" />
@@ -19,11 +18,10 @@ const CartSale = (props) => {
         <StarRating/>
         <p className="name-product-sale">{product['name-product']}</p>
         <div className="d-flex align-items-center justify-content-center">
-            <p className="cross-price">$400.00</p>
-            <p className="sale-price">$350.00</p>
+          <p className="cross-price">$400.00</p>
+          <p className="sale-price">$350.00</p>
         </div>
         <TimeCountDown time={product['time']}/>
-
       </blockquote>
       <div className="sale-box">SALE!</div>
     </div>

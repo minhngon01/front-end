@@ -1,5 +1,6 @@
 import React from 'react';
 import Countdown from 'react-countdown-now';
+
 const renderer = ({ days ,hours, minutes, seconds, completed }) => {
   if (completed) {
     // Render a completed state
@@ -8,22 +9,22 @@ const renderer = ({ days ,hours, minutes, seconds, completed }) => {
     // Render a countdown
     return (
       <div className="d-flex flex-row justify-content-center">
-            <div className="d-flex flex-column m-1">
-                <p className="time-figure">{days}</p>
-                <p className="time-word">DAY</p>
-            </div>
-            <div className="d-flex flex-column m-1">
-                <p className="time-figure">{hours}</p>
-                <p className="time-word">HRS</p>
-            </div>
-            <div className="d-flex flex-column m-1">
-                <p className="time-figure">{minutes}</p>
-                <p className="time-word">MIN</p>
-            </div>
-            <div className="d-flex flex-column m-1">
-                <p className="time-figure">{seconds}</p>
-                <p className="time-word">SEC</p>
-            </div>
+        <div className="d-flex flex-column m-1">
+          <p className="time-figure">{days}</p>
+          <p className="time-word">DAY</p>
+        </div>
+        <div className="d-flex flex-column m-1">
+          <p className="time-figure">{hours}</p>
+          <p className="time-word">HRS</p>
+        </div>
+        <div className="d-flex flex-column m-1">
+          <p className="time-figure">{minutes}</p>
+          <p className="time-word">MIN</p>
+        </div>
+        <div className="d-flex flex-column m-1">
+          <p className="time-figure">{seconds}</p>
+          <p className="time-word">SEC</p>
+        </div>
       </div>
     )
     ;

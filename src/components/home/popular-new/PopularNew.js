@@ -34,7 +34,7 @@ class PopularNew extends Component{
     };
 
     return(
-      <div className="popular-new container">
+      <div className="popular-new container my-5">
         <h1 className="my-5">Popular news</h1>
          <Slider {...settings}>
             <News/>
