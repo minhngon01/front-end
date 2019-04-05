@@ -4,6 +4,12 @@ class ProductsProvider extends React.component {
   const ProductsContext = React.createContext();
 
   state = {
+    info_account: {
+      'name-user': "Dung",
+    },
+    cart:{
+
+    },
     saleProducts: [
       {
         'name-product' : "Apple Macbook";

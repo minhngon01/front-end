@@ -2,6 +2,7 @@ import React, { Component }  from 'react'
 import {style} from 'glamor';
 import './cartsale.css';
 import StarRating from '../../StarRating/StarRating';
+import TimeCountDown from '../../TimeCountDown/TimeCountDown';
 const CartSale = (props) => {
   let product = props.product;
 
@@ -21,24 +22,7 @@ const CartSale = (props) => {
             <p className="cross-price">$400.00</p>
             <p className="sale-price">$350.00</p>
         </div>
-        <div className="d-flex flex-row justify-content-center">
-              <div className="d-flex flex-column m-1">
-                  <p className="time-figure">33</p>
-                  <p className="time-word">DAY</p>
-              </div>
-              <div className="d-flex flex-column m-1">
-                  <p className="time-figure">12</p>
-                  <p className="time-word">HRS</p>
-              </div>
-              <div className="d-flex flex-column m-1">
-                  <p className="time-figure">13</p>
-                  <p className="time-word">MIN</p>
-              </div>
-              <div className="d-flex flex-column m-1">
-                  <p className="time-figure">26</p>
-                  <p className="time-word">SEC</p>
-              </div>
-          </div>
+        <TimeCountDown time={product['time']}/>
 
       </blockquote>
       <div className="sale-box">SALE!</div>
