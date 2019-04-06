@@ -38,8 +38,6 @@
   font-size:13px;
 }
 
-
-
 .info-news{
   margin-top:20px;
   display:flex;
@@ -47,7 +45,6 @@
 }
 
 .info-detail{
-
   align-content: center;
   flex-grow: 1;
 }

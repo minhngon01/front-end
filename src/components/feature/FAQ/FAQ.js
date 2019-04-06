@@ -8,6 +8,8 @@ import SimilarContent from "./Contents/SimilarContents"
 
 
 class FAQ extends React.Component{
+
+	
   render(){
     return(
      <div>
@@ -49,7 +51,7 @@ class FAQ extends React.Component{
       		</div>
 
       		<br/>
-      		<br/>
+      		<br/>																
 
       		<div>
       	 		<div className = "row-outer">

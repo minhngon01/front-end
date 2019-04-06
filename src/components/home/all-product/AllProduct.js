@@ -10,21 +10,21 @@ class AllProduct extends Component{
         'image' : 'https://devicer.cmsmasters.net/wp-content/uploads/2017/09/11-2-540x540.jpg'
       },
       {
-        'price' : '$700.00',
+        'price' : '$800.00',
         'image' : 'https://devicer.cmsmasters.net/wp-content/uploads/2015/05/9-3.jpg'
       },
       {
-        'price' : '$700.00',
+        'price' : '$900.00',
         'image' : 'https://devicer.cmsmasters.net/wp-content/uploads/2017/09/12-2-540x540.jpg'
       }
     ],
     "products": [
       {
-        'price' : '$55.00',
+        'price' : '$60.00',
         'image' : 'https://devicer.cmsmasters.net/wp-content/uploads/2015/05/29-2-540x540.jpg'
       },
       {
-        'price' : '$400.00',
+        'price' : '$300.00',
         'image' : 'https://devicer.cmsmasters.net/wp-content/uploads/2015/05/8-3-540x540.jpg'
       },
       {
@@ -38,11 +38,11 @@ class AllProduct extends Component{
         'image' : 'https://devicer.cmsmasters.net/wp-content/uploads/2017/09/10-2-540x540.jpg'
       },
       {
-        'price' : '$400.00',
+        'price' : '$140.00',
         'image' : 'https://devicer.cmsmasters.net/wp-content/uploads/2017/09/17-3-540x540.jpg'
       },
       {
-        'price' : '$400.00',
+        'price' : '$40.00',
         'image' : 'https://devicer.cmsmasters.net/wp-content/uploads/2017/05/3-540x540.jpg'
       }
     ]
