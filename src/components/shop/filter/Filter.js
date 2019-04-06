@@ -4,7 +4,12 @@ import './filter.css';
 import Slider, {Range} from 'rc-slider';
 import 'rc-slider/assets/index.css';
 import Select from 'react-select';
+<<<<<<< HEAD
 import Products from "../../Fragment/Products/products";
+=======
+import StarRating from "../../Fragment/StarRating/StarRating";
+import Product from "../../Fragment/Product/Product";
+>>>>>>> upstream/master
 
 const devices = [
   { label: "Apple", value: 1 },
@@ -16,6 +21,20 @@ const devices = [
 ];
 
 class Filter extends React.Component{
+  products = [
+    {
+      'price' : '$168.00',
+      'image' : 'https://devicer.cmsmasters.net/wp-content/uploads/2017/09/11-2-540x540.jpg'
+    },
+    {
+      'price' : '$700.00',
+      'image' : 'https://devicer.cmsmasters.net/wp-content/uploads/2015/05/9-3.jpg'
+    },
+    {
+      'price' : '$700.00',
+      'image' : 'https://devicer.cmsmasters.net/wp-content/uploads/2017/09/12-2-540x540.jpg'
+    }
+  ]
   render(){
     return(
       <body>
@@ -24,8 +43,6 @@ class Filter extends React.Component{
             <input type="text" className="input-search-shop" placeholder="Search products..."/>
             <FontAwesomeIcon className="icon-heart" icon="search" color="black"/>
           </div>
-          <br/>
-
 
           <h5>Product categories</h5>
           <div className="app">
@@ -33,7 +50,6 @@ class Filter extends React.Component{
                 <Select className= "dropdown-search" options={devices} placeholder = "Select a category" />
               </div>
           </div>
-          <br/>
 
 
           <h5>Filter by price</h5>
@@ -48,13 +64,9 @@ class Filter extends React.Component{
                 <span>$</span>1,120  <button type="submit" class="filter-button"><b>FILTER</b></button>
             </span>
           </div>
-
-
-          <br/>
-          <br/>
           <h5>Products</h5>
-          <Products/>
-          
+          {this.products.map(product => (<Product product={product}/>))}
+
           <div className="carts-shop">
             <h5> Cart </h5>
             <p> No products in the cart </p>

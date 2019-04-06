@@ -23,8 +23,8 @@ class Home extends Component{
         <DealOfTheDay/>
         <BestSeller/>
         <PopularNew/>
-        <BrandsLogo/>
         <AllProduct/>
+        <BrandsLogo/>
         <Subscribe/>
       </div>
     )

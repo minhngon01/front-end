@@ -123,14 +123,13 @@ class BestSeller extends Component{
     };
     return(
       <div className="best-seller container">
-          <h3>Best seller</h3>
-          <div className="best-seller-box" id="container" >
-                 <Slider {...settings}>
-                   {this.bestSellerProducts.map( product => (<Cart product={product}/>))}
-                  </Slider>
-          </div>
+        <h3>Best seller</h3>
+        <div className="best-seller-box" id="container" >
+          <Slider {...settings}>
+            {this.bestSellerProducts.map( product => (<div className="px-3"><Cart product={product}/></div>))}
+          </Slider>
         </div>
-
+      </div>
     )
   }
 
