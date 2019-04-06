@@ -7,8 +7,16 @@
 
 .headline {
 	position: relative;
-	margin-left: 310px;
-	
+	margin-left: 310px;	
+}
+
+.home-headline{
+    color: gray;
+    text-decoration: none;
+    background: transparent;
+    border: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .header-contacts {
@@ -47,7 +55,7 @@ hr {
 .row-inner{
 	width: 1300px;
 	position: relative;
-    padding: 0 20px;
+    padding: 0 10px;
     margin: 0 auto;
 }
 

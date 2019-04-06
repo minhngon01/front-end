@@ -4,7 +4,6 @@ import './filter.css';
 import Slider, {Range} from 'rc-slider';
 import 'rc-slider/assets/index.css';
 import Select from 'react-select';
-import StarRating from "../../Fragment/StarRating/StarRating";
 import Products from "../../Fragment/Products/products";
 
 const devices = [

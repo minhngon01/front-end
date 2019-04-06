@@ -1,0 +1,52 @@
+
+.heading-faq h2{
+	font-size: 28px;
+    line-height: 32px;
+    color: #4a4a4d;
+    font-family: 'Heebo', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    font-weight: -100;
+    margin-bottom: 30px;
+}
+
+.content-faq {
+	display: table;
+}
+
+.tab-list{
+	display: table-cell;
+	width: 22%;
+	vertical-align: top;
+	list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.tab-list-item{
+	display: block;
+    margin-bottom: 20px;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+.tab-list-name{
+	color: black;
+    text-decoration: none;
+    background: transparent;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    outline: none;
+}
+
+.tab-wrap{
+	display: table-cell;
+    width: 82%;
+    vertical-align: top;
+ }
+
+ .row2{
+ 	margin-top: 50px;
+ }

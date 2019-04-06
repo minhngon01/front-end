@@ -21,7 +21,7 @@ class Contacts extends React.Component{
     return(
     	<div>
 	   		<div className = "headline">
-	   			<Link className="home-headline" to="/Home">Home</Link>
+	   			<Link className="home-headline" to="../../../home/Home">Home</Link>
 	   			<span className= "contact-headline">/ Contacts</span>
 	   			<h3 className = "header-contacts"> Contacts </h3>
 	   		</div>
@@ -48,8 +48,6 @@ class Contacts extends React.Component{
 
       		<div className = "row-outer">
       			<div className = "row-inner">
-	      		
-
 	      				<div className = "column-one-half">
 	      					<div>
 	      						<h2 className = "one-half-heading"> Did not find an answer to your question? </h2>
