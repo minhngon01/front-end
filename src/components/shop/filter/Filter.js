@@ -4,12 +4,9 @@ import './filter.css';
 import Slider, {Range} from 'rc-slider';
 import 'rc-slider/assets/index.css';
 import Select from 'react-select';
-<<<<<<< HEAD
-import Products from "../../Fragment/Products/products";
-=======
 import StarRating from "../../Fragment/StarRating/StarRating";
 import Product from "../../Fragment/Product/Product";
->>>>>>> upstream/master
+
 
 const devices = [
   { label: "Apple", value: 1 },
