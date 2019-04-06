@@ -13,7 +13,7 @@
 }
 
 .my-tabs-list{
-	width: 22%;
+	width: 24%;
 	vertical-align: top;
 	list-style: none;
     margin: 0;
@@ -43,4 +43,12 @@
 	display: table-cell;
 }
 
+.item-tab-list:hover{ 
+	color:LightGray;
+	transition-duration: 0.5s;
+}
+
+.onSelect{
+	text-decoration: underline;
+}
 
