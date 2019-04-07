@@ -13,7 +13,7 @@ import AboutUs from './components/feature/AboutUs/AboutUs';
 import FAQ from './components/feature/FAQ/FAQ';
 import News from './components/feature/News/News';
 import Sale from './components/feature/Sale/Sale';
-
+import DetailProduct from './components/detail-product/DetailProduct';
 /*
   external library
 */
@@ -37,6 +37,7 @@ class App extends Component {
               <Route path="/news" component={News}/>
               <Route path="/FAQ" component={FAQ}/>
               <Route path="/sale" component={Sale}/>
+              <Route path="/detailProduct" component={DetailProduct}/>
             </Switch>
           <Bottom/>
           </div>

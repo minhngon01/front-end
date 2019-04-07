@@ -8,9 +8,9 @@ const Product =  (props) => {
     backgroundImage   : "url(" + product['image'] + ")",
     backgroundPosition: "center",
     backgroundRepeat  : "no-repeat",
-    backgroundSize: "contain",
-    width : "100px",
-    height: "100px",
+    backgroundSize    : "contain",
+    width             : "100px",
+    height            : "100px",
   };
 
   return (
