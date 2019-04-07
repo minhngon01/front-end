@@ -1,0 +1,60 @@
+.box-time-countdown{
+  border-style:solid;
+  border-width:1px;
+  border-color:lightgrey;
+  border-radius:16px;
+
+  margin-right:50%;
+  margin-top:10px;
+  padding:30px 10px 20px 10px;
+}
+
+.detail--button-add-to-cart{
+  border-style:solid;
+  border-width:1px;
+  border-color:lightgrey;
+  border-radius:25px;
+
+  text-align: center;
+  padding: 12px 15px 8px 15px;
+  font-size:13px;
+}
+
+.categories-share{
+  margin-right:50%;
+}
+
+.input-number{
+  padding: 8px 8px 8px 15px;
+  width:90px;
+  border-style: solid;
+  border-width:1px;
+  border-color: lightgrey;
+  border-radius: 10px;
+}
+
+.input-number:focus{
+  border-style: solid;
+  border-width:1px;
+  border-color: blue;
+  border-radius: 10px;
+  outline: none;
+}
+.review-part{
+  position:relative;
+  height:800px;
+}
+.image-review-poster{
+  width:70px;
+  height:70px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 1px;
+  margin-right:15px;
+}
+.review-post{
+  border-style: solid;
+  border-width:0px 0px 1px 0px;
+  border-color:lightgrey;
+  padding: 15px 30px;
+}
