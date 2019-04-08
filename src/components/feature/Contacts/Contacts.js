@@ -20,29 +20,25 @@ class Contacts extends React.Component{
   render(){
     return(
     	<div className= "container">
-      		<div className = "row-outer">
-      			<div className = "row-inner">
-		   			<Link className="home-headline" to="/home">Home</Link>
-		   			<span className= "contact-headline">/ Contacts</span>
-		   			<h3 className = "header-contacts"> Contacts </h3>
-	   			</div>
-      		<div>
 
-      	 	<div className="googlemap m-0 p-0" style={{ height: '500px', width: '100%' }}>
-	        	<GoogleMapReact
-			        bootstrapURLKeys={{ key:'AIzaSyD3OwF3E8PNB7baDWTQgFkUN8fsRF7GxgM' }}
-			        defaultCenter={this.props.center}
-			        defaultZoom={this.props.zoom} >
-		        	<AnyReactComponent lat={59.955413} lng={30.337844}/>
-		        </GoogleMapReact>
+  			<div className = "row-inner">
+	   			<Link className="home-headline" to="/home">Home</Link>
+	   			<span className= "contact-headline">/ Contacts</span>
+	   			<h3 className = "header-contacts"> Contacts </h3>
+ 				</div>
 
-	      	</div>
-	      	
-      		</div>
+	  	 	<div className="googlemap m-0 p-0" style={{ height: '500px', width: '100%' }}>
+	      	<GoogleMapReact
+		        bootstrapURLKeys={{ key:'AIzaSyD3OwF3E8PNB7baDWTQgFkUN8fsRF7GxgM' }}
+		        defaultCenter={this.props.center}
+		        defaultZoom={this.props.zoom} >
+	        	<AnyReactComponent lat={59.955413} lng={30.337844}/>
+	        </GoogleMapReact>
+	    	</div>
+
 				<DetailInfoContact/>
-    		</div>
 
-  	</div>
+  		</div>
     )
   }
 }

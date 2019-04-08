@@ -9,11 +9,11 @@ import SimilarContent from "./Contents/SimilarContents"
 
 class FAQ extends React.Component{
 
-	
+
   render(){
     return(
      <div>
-     		
+
      		<div className = "row-inner">
 		   		<div className = "headline">
 		   			<Link className="home-headline" to="/Home">Home</Link>
@@ -24,19 +24,14 @@ class FAQ extends React.Component{
 
 
       		<div>
-      	 			<div className = "row-inner">
-      	 				<div className = "heading-faq">
-      	 					<h2>Payment and delivery</h2>
-      	 				</div>
-
-      	 			<SimilarContent/>	
-      	 			</div>
-      		
+	  	 			<div className = "row-inner">
+	  	 				<div className = "heading-faq">
+	  	 					<h2>Payment and delivery</h2>
+	  	 				</div>
+	  	 			<SimilarContent/>
+	  	 			</div>
       		</div>
 
-      		<br/>
-      		<br/>
-      	
 
       		<div>
       	 		<div className = "row-outer">
@@ -44,14 +39,11 @@ class FAQ extends React.Component{
       	 				<div className = "heading-faq">
       	 					<h2>Warranty and service</h2>
       	 				</div>
-
       	 				<SimilarContent/>
       	 			</div>
-      	 		</div>	
+      	 		</div>
       		</div>
 
-      		<br/>
-      		<br/>																
 
       		<div>
       	 		<div className = "row-outer">
@@ -66,17 +58,14 @@ class FAQ extends React.Component{
       	 			<div className = "row-inner">
       	 				<DetailInfoContact/>
       	 			</div>
-      	 		</div>	
+      	 		</div>
       		</div>
-      		
-
-      	
 
       		<div>
-      			
+
       		</div>
       		</div>
-      	
+
     )
   }
 }

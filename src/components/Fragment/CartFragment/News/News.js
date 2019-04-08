@@ -23,10 +23,10 @@ const News =  (props) => {
               <div className="content-news">{news.content}</div>
             </div>
             <div className="comment-news">
-              <FontAwesomeIcon icon="heart"/> 
+              <FontAwesomeIcon icon="heart"/>
               <p className="number-comments">{news.nohrt}</p>
               &nbsp;
-              <FontAwesomeIcon icon="comments"/>             
+              <FontAwesomeIcon icon="comments"/>
               <p className="number-comments">{news.nocmt}</p>
             </div>
           </div>

@@ -14,33 +14,26 @@
 }
 
 .column-heading h2{
-	font-size: 59px; 
+	font-size: 59px;
     line-height: 65px;
     font-weight: 330;
 }
 
-.column-one-half{
-	width: 47%;
-	height:400px;
-}
 
-.column-inner{
-	padding: 72px 4% 0 0%;
-}
 
-#heading-3xtu{
+.heading-3xtu{
 	text-align: left;
     margin-top: 0px;
     margin-bottom: 20px;
 }
 
-#heading-3xtu h3{
+.heading-3xtu{
 	font-size: 20px;
     line-height: 26px;
     color: #000000;
 }
 
-#heading-3xty h2{
+.heading-3xty{
 	font-size: 25px;
     line-height: 36px;
     font-weight: 300;
@@ -48,7 +41,6 @@
 }
 
 #column-1c2h3d{
-	-webkit-border-radius: 15px;
     border-radius: 15px;
     overflow: hidden;
     background-image: url(https://devicer.cmsmasters.net/wp-content/uploads/2015/04/features-2-2.jpg);
@@ -57,7 +49,7 @@
     background-attachment: scroll;
     background-size: cover;
     height: 300px;
-    width: 603px;
+    width: 100%;
 }
 
 .column-one-fourth{
@@ -76,7 +68,6 @@
 
 
 #column-1c2h3e{
-	-webkit-border-radius: 15px;
     border-radius: 15px;
     overflow: hidden;
     background-image: url(https://devicer.cmsmasters.net/wp-content/uploads/2015/04/features-3-2.jpg);
@@ -85,13 +76,9 @@
     background-attachment: scroll;
     background-size: cover;
     height: 300px;
-    width: 550px;
-    margin-right: 50px;
+    width: 100%;
 }
 
-.column-inner-1{
-	padding: 70px 10% 0 10%;
-}
 
 #new-popular{
 	margin-top: -100px;

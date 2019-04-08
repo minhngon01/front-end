@@ -42,7 +42,7 @@ class News extends Component{
         'nocmt' : '3',
         'nohrt' : '5'
       }
-    ], 
+    ],
 
     "col-3" : [
       {
@@ -58,7 +58,6 @@ class News extends Component{
   render(){
     return(
 
-      
 
     <div className="container">
       <div className="on-sale">
@@ -91,4 +90,3 @@ class News extends Component{
   }
 }
 export default News
-

@@ -21,6 +21,8 @@
     border-color:blue;
     border-width:2px;
     cursor:pointer;
+    text-decoration: none;
+
 }
 
 .card-img-top-modify-sale{

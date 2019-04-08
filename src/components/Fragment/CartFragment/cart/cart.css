@@ -44,6 +44,7 @@
 .name-product:hover{
   color:blue;
   cursor:pointer;
+  text-decoration: none;
 }
 
 .price-product{

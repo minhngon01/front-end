@@ -2,6 +2,7 @@ import React from 'react';
 import './cart.css';
 import StarRating from "../../StarRating/StarRating";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {Link} from 'react-router-dom'
 // {
 //   'name-product' : "Samsung Galaxy J5 Black",
 //   'branch' : 'Samsung',
@@ -26,9 +27,7 @@ const Cart = props => {
           <div className="brand-product">
             {product['type']+', '+product['sub-branch']}
           </div>
-          <div className="name-product">
-            {product['name-product']}
-          </div>
+          <Link className="name-product" to={"/product/"+product['name-product']}>{product['name-product']}</Link>
           <div className="price-product">
           {product['price']}
           </div>

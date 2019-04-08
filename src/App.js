@@ -37,7 +37,7 @@ class App extends Component {
               <Route path="/news" component={News}/>
               <Route path="/FAQ" component={FAQ}/>
               <Route path="/sale" component={Sale}/>
-              <Route path="/detailProduct" component={DetailProduct}/>
+              <Route path="/product/:id" component={DetailProduct}/>
             </Switch>
           <Bottom/>
           </div>
