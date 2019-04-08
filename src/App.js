@@ -6,6 +6,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 */
 import Header from './components/layout/header/Header';
 import Bottom from './components/layout/bottom/Bottom';
+
 import Home from './components/home/Home';
 import Shop from './components/shop/Shop';
 import Contacts from './components/feature/Contacts/Contacts';

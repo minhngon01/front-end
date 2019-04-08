@@ -37,8 +37,13 @@
 .name-product-sale{
   font-size:20px;
   font-weight: 500;
+  color:black;
 }
-
+.name-product-sale:hover{
+  cursor: pointer;
+  text-decoration: none;
+  color:blue;
+}
 .cross-price{
   text-decoration: line-through;
   color: lightgrey;

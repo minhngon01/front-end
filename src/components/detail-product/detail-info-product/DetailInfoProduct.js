@@ -1,6 +1,8 @@
 import React from 'react';
 import StarRating from '../../Fragment/StarRating/StarRating';
 import TimeCountDown from '../../Fragment/TimeCountDown/TimeCountDown';
+import Review from '../../Fragment/Review/Review';
+
 import { Transition, animated } from 'react-spring/renderprops';
 import './detailinfoproduct.css';
 
@@ -42,36 +44,14 @@ class DetailInfoProduct extends React.Component{
     ),
     style => (
       <animated.div style={{ ...style}}>
-        <div className="row animation-products">
-          <div className="col-sm-8">
-            <b>1 review for Meizu M6 Note Blue</b>
-            <div className="review-post d-flex flex-row">
-              <div className="image-review-poster"/>
-              <div className="content-review-poster f-flex flex-column">
-                <div className="d-flex flex-row">
-                  <StarRating/>
-                  <div className="poster-name">cmsmasters</div>
-                </div>
-                <div className="date-review">October 12, 2017</div>
-                <div className="content-review">Aenean semper varius pellentesque</div>
-              </div>
-            </div>
-          </div>
-          <div className="col-sm-4 d-flex flex-column">
-              <b>Add a review</b>
-              Your Rating
-              <StarRating/>
-              <textarea className="my-3"placeholder="Your Review"/>
-              <input className="my-3" placeholder="Name *"/>
-              <input className="my-3" placeholder="Email *"/>
-              <div className="button-add-to-cart ">ADD REVIEW</div>
-          </div>
-        </div>
+        <Review/>
       </animated.div>
     )
   ]
   previousIndex =-1;
   state = { index: 0 }
+
+
   toggle = numberIndex => e => {
     this.previousIndex = this.state.index;
     this.setState({index : numberIndex});
@@ -113,9 +93,6 @@ class DetailInfoProduct extends React.Component{
           </div>
         </div>
 
-        /*
-          detail additional reviews part
-        */
         <div className="review-part">
           <ul className="nav nav-recent my-5 d-flex justify-content-center ">
               <li className="nav-item px-4"><a className="recent-link" onClick={this.toggle(0)}>Description</a></li>

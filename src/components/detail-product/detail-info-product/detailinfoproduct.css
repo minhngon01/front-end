@@ -9,6 +9,20 @@
   padding:30px 10px 20px 10px;
 }
 
+.image-detail-product{
+  background-image: url(https://cdn.tgdd.vn/Products/Images/44/197305/apple-macbook-air-mree2sa-a-i5-8gb-128gb-133-gold-400x400.jpg);
+  background-size : contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top:20px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: lightgrey;
+  border-radius:20px;
+  height:510px;
+  width:100%;
+}
+
 .detail--button-add-to-cart{
   border-style:solid;
   border-width:1px;
@@ -42,7 +56,7 @@
 }
 .review-part{
   position:relative;
-  height:800px;
+  height:620px;
 }
 .image-review-poster{
   width:70px;
