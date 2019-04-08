@@ -11,6 +11,7 @@ const Product =  (props) => {
     backgroundSize    : "contain",
     width             : "100px",
     height            : "100px",
+
   };
 
   return (

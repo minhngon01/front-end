@@ -7,6 +7,7 @@ import Select from 'react-select';
 import StarRating from "../../Fragment/StarRating/StarRating";
 import Product from "../../Fragment/Product/Product";
 
+
 const devices = [
   { label: "Apple", value: 1 },
   { label: "Headphone", value: 2 },

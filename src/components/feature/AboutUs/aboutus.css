@@ -1,0 +1,98 @@
+#hello-here-we-are{
+	height:550px;
+	background: url(https://devicer.cmsmasters.net/wp-content/uploads/2015/04/features-1-2.jpg);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.column-heading{
+	padding: 200px 0% 130px 10%;
+	width:60%;
+}
+
+.column-heading h2{
+	font-size: 59px; 
+    line-height: 65px;
+    font-weight: 330;
+}
+
+.column-one-half{
+	width: 47%;
+	height:400px;
+}
+
+.column-inner{
+	padding: 72px 4% 0 0%;
+}
+
+#heading-3xtu{
+	text-align: left;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+#heading-3xtu h3{
+	font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+}
+
+#heading-3xty h2{
+	font-size: 25px;
+    line-height: 36px;
+    font-weight: 300;
+    color: #2e2e2e;
+}
+
+#column-1c2h3d{
+	-webkit-border-radius: 15px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-image: url(https://devicer.cmsmasters.net/wp-content/uploads/2015/04/features-2-2.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    height: 300px;
+    width: 603px;
+}
+
+.column-one-fourth{
+	width: 25%;
+	text-align: center;
+	height: 250px;
+}
+
+.icon{
+	margin-bottom: 25px;
+}
+
+.count-up{
+	font-size: 30px;
+}
+
+
+#column-1c2h3e{
+	-webkit-border-radius: 15px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-image: url(https://devicer.cmsmasters.net/wp-content/uploads/2015/04/features-3-2.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    height: 300px;
+    width: 550px;
+    margin-right: 50px;
+}
+
+.column-inner-1{
+	padding: 70px 10% 0 10%;
+}
+
+#new-popular{
+	margin-top: -100px;
+}

@@ -17,8 +17,9 @@
 .button-search{
   padding:10px;
   border-radius:75px;
-  margin:0;
   background:  rgb(251,251,251);
+  width:160px;
+  
 }
 
 .input-search{

@@ -1,0 +1,54 @@
+
+.heading-faq h2{
+	font-size: 28px;
+    line-height: 32px;
+    color: #4a4a4d;
+    font-family: 'Heebo', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    font-weight: -100;
+    margin-bottom: 30px;
+}
+
+.content-faq {
+	display: table;
+}
+
+.my-tabs-list{
+	width: 24%;
+	vertical-align: top;
+	list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display:table-cell;
+}
+
+.item-tab-list{
+	display: block;
+    margin-bottom: 20px;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Heebo', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#tab1, #tab2, #tab3, #tab4{
+	display: table-cell;
+	width: 50%;
+}
+
+.tab-wrap{
+	display: table-cell;
+}
+
+.item-tab-list:hover{ 
+	color:LightGray;
+	transition-duration: 0.5s;
+}
+
+.onSelect{
+	text-decoration: underline;
+}
+
