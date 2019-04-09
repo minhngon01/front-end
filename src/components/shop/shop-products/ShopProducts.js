@@ -11,7 +11,7 @@ class ShopProducts extends React.Component{
               <Cart product={product}/>
             </div>
           ))}
-      
+
         </div>
       </div>
     )

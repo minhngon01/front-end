@@ -19,13 +19,16 @@
   border-radius:75px;
   background:  rgb(251,251,251);
   width:160px;
-  
+  outline:none!important;
+
+
 }
 
 .input-search{
   width:100%;
   overflow:hidden;
   border-radius:75px;
+  outline:none;
 }
 
 .search-box input{
