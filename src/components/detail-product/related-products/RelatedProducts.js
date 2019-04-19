@@ -45,7 +45,7 @@ function RelatedProducts(props){
   ]
 
   return(
-    <div className="container">
+    <div className="container mb-5">
       <h2>Related Products</h2>
       <div className="row">
         {relatedProducts.map(element=>(<div className="col-sm-3"><Cart product={element}/></div>))}

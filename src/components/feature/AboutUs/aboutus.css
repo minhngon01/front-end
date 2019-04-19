@@ -44,10 +44,10 @@
     border-radius: 15px;
     overflow: hidden;
     background-image: url(https://devicer.cmsmasters.net/wp-content/uploads/2015/04/features-2-2.jpg);
-    background-position: top center;
+    background-position:center;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-size: cover;
+    background-size: contain;
     height: 300px;
     width: 100%;
 }
@@ -71,10 +71,10 @@
     border-radius: 15px;
     overflow: hidden;
     background-image: url(https://devicer.cmsmasters.net/wp-content/uploads/2015/04/features-3-2.jpg);
-    background-position: top center;
+    background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-size: cover;
+    background-size: contain;
     height: 300px;
     width: 100%;
 }

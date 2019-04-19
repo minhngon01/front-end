@@ -6,7 +6,7 @@ import 'rc-slider/assets/index.css';
 import Select from 'react-select';
 import StarRating from "../../Fragment/StarRating/StarRating";
 import Product from "../../Fragment/Product/Product";
-
+import CartPanel from "../../Fragment/Cart/CartPanel";
 
 const devices = [
   { label: "Apple", value: 1 },
@@ -66,7 +66,10 @@ class Filter extends React.Component{
 
           <div className="carts-shop">
             <h5> Cart </h5>
-            <p> No products in the cart </p>
+            <CartPanel/>
+            {
+              //<p> No products in the cart </p>
+            }
           </div>
 
       </div>

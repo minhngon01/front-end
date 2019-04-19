@@ -1,0 +1,33 @@
+@import "./settings/settings.global";
+@import "./settings/settings.colors";
+
+@import "./tools/tools.mixins";
+
+@import "./generic/generic.normalize";
+@import "./generic/generic.box-sizing";
+@import "./generic/generic.reset";
+@import "./generic/generic.shared";
+
+@import "./elements/elements.page";
+@import "./elements/elements.headings";
+@import "./elements/elements.links";
+@import "./elements/elements.lists";
+@import "./elements/elements.images";
+
+@import "./objects/objects.wrappers";
+@import "./objects/objects.layout";
+@import "./objects/objects.media";
+
+@import "./components/components.page-title";
+@import "./components/components.cards";
+@import "./components/components.cart";
+@import "./components/components.product";
+@import "./components/components.news";
+@import "./components/components.search";
+@import "./components/components.review";
+@import "./components/components.detailproduct";
+@import "./components/components.cartPanel";
+
+
+// @import "./trumps/trumps.links";
+// @import "trumps.widths";

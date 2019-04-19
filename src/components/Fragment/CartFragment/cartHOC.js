@@ -1,7 +1,7 @@
 import React from 'react';
 import StarRating from "../StarRating/StarRating";
 
-import './cart/cart.css';
+// import './cart/cart.css';
 /*
   argument : select type of cart , JSOn product
 */

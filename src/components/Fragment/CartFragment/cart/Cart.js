@@ -1,8 +1,7 @@
 import React from 'react';
-import './cart.css';
 import StarRating from "../../StarRating/StarRating";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
 // {
 //   'name-product' : "Samsung Galaxy J5 Black",
 //   'branch' : 'Samsung',
@@ -21,32 +20,31 @@ const Cart = props => {
   }
 
   return(
-      <div className="cart-product ">
-        <div className="image-product" style={imageProducts}/>
-        <div className="info-product d-flex flex-column align-items-center ">
-          <div className="brand-product">
+      <div className="c-card">
+        <div className="c-card--basic__image" style={imageProducts}/>
+
+          <div className="c-card--basic__brand-name">
             {product['type']+', '+product['sub-branch']}
           </div>
-          <Link className="name-product" to={"/product/"+product['name-product']}>{product['name-product']}</Link>
-          <div className="price-product">
+          <Link className="c-card--basic__name-product" to={"/product/"+product['name-product']}>{product['name-product']}</Link>
+          <div className="c-card--basic__price">
           {product['price']}
           </div>
-          <StarRating/>
+          <StarRating />
 
-          <div className={"button-add-to-cart"}>ADD TO CART</div>
-          <div className={"rate-search-compare" + " d-flex" +  " flex-column"}>
-            <div className={"circle-around" }>
+          <div className="c-card--basic__button" >ADD TO CART</div>
+          <div className={"c-card--basic-icon"}>
+            <div className={"c-card--basic-icon__item" }>
               <FontAwesomeIcon className={"icon-heart"} icon="heart" color="black"/>
             </div>
-            <div className = "circle-around" >
+            <div className = "c-card--basic-icon__item" >
               <FontAwesomeIcon className={"icon-heart"} icon="recycle" color="black"/>
             </div>
-            <div className = {"circle-around" }>
+            <div className = {"c-card--basic-icon__item" }>
               <FontAwesomeIcon className={"icon-heart"} icon="search" color="black"/>
             </div>
           </div>
         </div>
-      </div>
   )
 }
 

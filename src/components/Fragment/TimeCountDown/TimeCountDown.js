@@ -8,22 +8,22 @@ const renderer = ({ days ,hours, minutes, seconds, completed }) => {
   } else {
     // Render a countdown
     return (
-      <div className="d-flex flex-row justify-content-center">
-        <div className="d-flex flex-column m-1">
-          <p className="time-figure">{days}</p>
-          <p className="time-word">DAY</p>
+      <div className="c-card--sale__time">
+        <div className="c-card--sale__time-part">
+          <p className="c-card--sale__time-part-number">{days}</p>
+          <p className="c-card--sale__time-part-word">DAY</p>
         </div>
-        <div className="d-flex flex-column m-1">
-          <p className="time-figure">{hours}</p>
-          <p className="time-word">HRS</p>
+        <div className="c-card--sale__time-part">
+          <p className="c-card--sale__time-part-number">{hours}</p>
+          <p className="c-card--sale__time-part-word">HRS</p>
         </div>
-        <div className="d-flex flex-column m-1">
-          <p className="time-figure">{minutes}</p>
-          <p className="time-word">MIN</p>
+        <div className="c-card--sale__time-part">
+          <p className="c-card--sale__time-part-number">{minutes}</p>
+          <p className="c-card--sale__time-part-word">MIN</p>
         </div>
-        <div className="d-flex flex-column m-1">
-          <p className="time-figure">{seconds}</p>
-          <p className="time-word">SEC</p>
+        <div className="c-card--sale__time-part">
+          <p className="c-card--sale__time-part-number">{seconds}</p>
+          <p className="c-card--sale__time-part-word">SEC</p>
         </div>
       </div>
     )

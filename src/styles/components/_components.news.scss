@@ -1,0 +1,56 @@
+.c-news{
+  position:relative;
+  display:flex;
+  flex-direction: column;
+  margin-right: 15px;
+  &__news{
+    &-image{
+      background-image: url(https://devicer.cmsmasters.net/wp-content/uploads/2017/06/blog6-2.jpg);
+      background-position: center;
+      background-size:contain;
+      height:250px;
+    }
+    &-info{
+      margin-top:20px;
+      display:flex;
+      flex-direction:row;
+      &-detail{
+        align-content: center;
+        flex-grow: 1;
+        &-type{
+          color:blue;
+          font-size:13px;
+          font-weight: bold;
+          padding: 0px 0px 10px 0px;
+          &:hover{
+            color:grey;
+            cursor:pointer;
+          }
+        }
+        &-title{
+          font-weight: bold;
+          color:black;
+          font-size:16px;
+          padding: 0px 0px 10px 0px;
+          &:hover{
+            color:$color-blue;
+            cursor:pointer;
+          }
+        }
+        &-date{
+          color: grey;
+          font-size:13px;
+        }
+        &-comments{
+          display:flex;
+          flex-direction:row;
+          &__number-comments{
+            color:grey;
+            margin-top:-5px;
+            padding-left:5px;
+          }
+        }
+      }
+    }
+  }
+}

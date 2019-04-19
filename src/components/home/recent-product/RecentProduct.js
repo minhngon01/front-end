@@ -198,12 +198,10 @@ class RecentProduct extends Component{
   productsTab = [
     style => (
       <animated.div style={{ ...style}}>
-        <div className="row animation-products">
+        <div className="o-layout--4-col animation-products">
           {
             this.products['recent-products'].map( product => (
-              <div className="col-sm-3">
                 <Cart product={product}/>
-              </div>
             ))
           }
         </div>
@@ -211,12 +209,10 @@ class RecentProduct extends Component{
     ),
     style => (
       <animated.div style={{ ...style}}>
-        <div className="row animation-products">
+        <div className="o-layout--4-col animation-products">
           {
             this.products['featured-products'].map( product => (
-              <div className="col-sm-3">
                 <Cart product={product}/>
-              </div>
             ))
           }
         </div>
@@ -224,12 +220,10 @@ class RecentProduct extends Component{
     ),
     style => (
       <animated.div style={{ ...style}}>
-        <div className="row animation-products">
+        <div className="o-layout--4-col animation-products">
           {
             this.products['top-rated-products'].map( product => (
-              <div className="col-sm-3">
                 <Cart product={product}/>
-              </div>
             ))
           }
         </div>
@@ -237,17 +231,13 @@ class RecentProduct extends Component{
     ),
     style => (
       <animated.div style={{ ...style}}>
-        <div className="row animation-products">
-          <div className="row animation-products">
+          <div className="o-layout--4-col animation-products">
           {
               this.products['sale-products'].map( product => (
-              <div className="col-sm-3">
                 <CartSale product={product}/>
-              </div>
             ))
           }
           </div>
-        </div>
       </animated.div>
     ),
 

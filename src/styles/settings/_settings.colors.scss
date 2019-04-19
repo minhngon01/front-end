@@ -1,0 +1,41 @@
+// Color palette
+$color-brand:           #BADA55;
+$color-brand-highlight: lighten($color-brand, 15%);
+$color-brand-shadow:    darken($color-brand, 15%);
+$color-white:           rgb(255,255,255);
+$color-gray:            rgb(155,155,156);
+$color-gray-light:      rgb(211,211,211);
+$color-gray-dark:       rgb(91,91,95);
+$color-yellow:          rgb(245,196,94);
+$color-yellow-light:    rgb(245,218,133);
+$color-pink-light:      rgb(237,144,174);
+$color-blue:            rgb(51,90,246);
+$color-black:           rgb(46,46,46);
+$color-highlight:       rgba(255, 255, 255, 0.05);
+$color-shadow:          rgba(0, 0, 0, 0.05);
+
+
+
+
+
+// UI
+$color-ui:          $color-white;
+
+// Text
+$color-text:        $color-gray-dark;
+$color-text-smaller:$color-gray-light;
+$color-text-hover:  $color-blue;
+// Links
+$color-link:        $color-black;
+$color-link-hover:  $color-blue;
+// Buttons
+$color-btn:         $color-brand;
+$color-btn-hover:   $color-brand-shadow;
+
+//Icons
+$color-star:        $color-yellow;
+
+//border
+$color-border:      gainsboro;
+
+$color-border-hover:$color-blue;

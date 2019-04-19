@@ -111,5 +111,5 @@
 
 @keyframes push{
 	0% {opacity: 0}
-  100%{transform: translateY(-50px); opacity: 1;}
+  100%{transform: translateY(-70px); opacity: 1;}
 }

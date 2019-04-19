@@ -2,6 +2,7 @@ import React,{Component} from 'react';
 import "./search.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {Link} from 'react-router-dom';
+import CartPanel from '../../../Fragment/Cart/CartPanel';
 class Search extends Component{
   render(){
     return(
@@ -10,10 +11,9 @@ class Search extends Component{
               <Link to="/"><img className="logo-brand-img card-img-top"  src="https://devicer.cmsmasters.net/wp-content/uploads/2018/03/device-home-1-logo-retina.png" alt="Card image cap"/></Link>
           </div>
 
-
-          <div className="search-box d-flex ">
+          <div className="c-search-bar d-flex ">
               <div className="dropdown">
-                <button className="button-search dropdown-toggle m-0 border-0 " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <button className="c-search-bar__dropdown-button dropdown-toggle  " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   All categories
                 </button>
                 <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -22,21 +22,20 @@ class Search extends Component{
                   <a className="dropdown-item" href="#">Something else here</a>
                 </div>
               </div>
-              {
-                //fix this one, overflow box
-              }
-              <input type="text" className="input-search border-0 flex-item-1" placeholder="Search for product"/>
+              <input type="text" className="c-search-bar__input c-search-bar__input__icon" placeholder="Search for product"/>
           </div>
 
-          <div className="cart-box d-flex ml-3 mt-2">
-              <div class="number-products">1</div>
+          <div className="c-cart">
+              <div class="c-cart__number-products">1</div>
               <FontAwesomeIcon className="icon-cart " icon="cart-plus" size="3x" color="DarkSlateGrey"/>
               <div className="ml-3">
                   <p className="m-0 font-weight-light">Your cart</p>
                   <p>$589.00</p>
               </div>
-              <div className="dropdown-content">
-                <p> No products in your cart </p>
+              <div className="c-cart__dropdown-content">
+                <CartPanel/>
+                {// <p> No products in your cart </p>
+                }
               </div>
 
           </div>

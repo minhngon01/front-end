@@ -1,5 +1,4 @@
 import React,{Component} from 'react';
-import "./cartnew.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const News =  (props) => {
@@ -13,21 +12,20 @@ const News =  (props) => {
   };
 
   return(
-        <div className="cart-news d-flex flex-column mr-5">
-          <div className="img-news"  style={img}/>
-          <div className="info-news">
-            <div className="info-detail">
-              <div className="type-news">{news.type}</div>
-              <div className="title-news">{news.title}</div>
-              <div className="date-news">{news.date}</div>
-              <div className="content-news">{news.content}</div>
+        <div className="c-news">
+          <div className="c-news__news-image"  style={img}/>
+          <div className="c-news__news-info">
+            <div className="c-news__news-info-detail">
+              <div className="c-news__news-info-detail-type">{news.type}</div>
+              <div className="c-news__news-info-detail-title">{news.title}</div>
+              <div className="c-news__news-info-detail-date">{news.date}</div>
             </div>
-            <div className="comment-news">
+            <div className="c-news__news-info-detail-comments">
               <FontAwesomeIcon icon="heart"/>
-              <p className="number-comments">{news.nohrt}</p>
+              <p className="c-news__news-info-detail-comments__number-comments">{news.nohrt}</p>
               &nbsp;
               <FontAwesomeIcon icon="comments"/>
-              <p className="number-comments">{news.nocmt}</p>
+              <p className="c-news__news-info-detail-comments__number-comments">{news.nocmt}</p>
             </div>
           </div>
         </div>

@@ -140,16 +140,9 @@ class Shop extends React.Component{
   render(){
     return(
       <div className="container">
-        <div className="row">
-
-          <div className="col-9">
+        <div className="o-layout--shop">
             <ProductsPagination products={this.products}/>
-          </div>
-
-          <div className="col-3">
             <Filter/>
-          </div>
-
         </div>
     </div>
     )

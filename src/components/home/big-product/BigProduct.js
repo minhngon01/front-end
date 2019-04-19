@@ -13,7 +13,7 @@ class BigProduct extends Component{
       'sale-price' : '$800.00',
       'amount-available' : 20,
       'rating' : 4,
-      'time': 'April 10, 2019 15:27:08',
+      'time': 'April 10, 2020 15:27:08',
       'image' : "https://devicer.cmsmasters.net/wp-content/uploads/2017/09/12-3.jpg",
     },
     {
@@ -25,7 +25,7 @@ class BigProduct extends Component{
       'sale-price' : '$80.00',
       'amount-available' : 20,
       'rating' : 4,
-      'time': 'April 10, 2019 15:27:08',
+      'time': 'April 10, 2020 15:27:08',
       'image' : "https://devicer.cmsmasters.net/wp-content/uploads/2017/09/4-2.jpg",
     },
     {
@@ -37,7 +37,7 @@ class BigProduct extends Component{
       'sale-price' : '$130.00',
       'amount-available' : 30,
       'rating' : 3,
-      'time': 'April 10, 2019 15:27:08',
+      'time': 'April 10, 2020 15:27:08',
       'image' : "https://devicer.cmsmasters.net/wp-content/uploads/2017/09/26-2.jpg",
     }
   ]
@@ -45,9 +45,9 @@ class BigProduct extends Component{
     return(
     <div className="container">
       <div className="on-sale">
-        <div className="row">
+        <div className="o-layout--3-col">
           {this.saleProducts.map(product => (
-            <div className="col-sm-4">
+            <div className="">
               <CartSale product={product}/>
             </div>
           ))}

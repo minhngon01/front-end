@@ -13,6 +13,7 @@
     "jquery": "^3.3.1",
     "jquery-ui": "^1.12.1",
     "jquery-ui-bundle": "^1.12.1-migrate",
+    "node-sass": "^4.11.0",
     "nouislider": "^13.1.4",
     "npm": "^6.9.0",
     "rc-slider": "^8.6.7",
@@ -31,6 +32,7 @@
     "reactstrap": "^7.1.0",
     "redux": "^4.0.1",
     "slick-carousel": "^1.8.1",
+    "styled-components": "^4.2.0",
     "typescript": "^3.4.1"
   },
   "scripts": {

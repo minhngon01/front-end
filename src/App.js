@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import SignIn from './components/sign-in/SignIn';
-
+import './styles/main.scss';
 /*
   Web's Components
 */

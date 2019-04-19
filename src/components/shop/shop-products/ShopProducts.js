@@ -5,13 +5,10 @@ class ShopProducts extends React.Component{
   render(){
     return(
       <div className="container">
-        <div className="row">
+        <div className="o-layout--3-col--shop">
           {this.props.products.map(product => (
-            <div className="col-sm-4">
               <Cart product={product}/>
-            </div>
           ))}
-
         </div>
       </div>
     )
