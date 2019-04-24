@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import './bottom.css';
 class Bottom extends Component{
   render(){
     return(
       <div className="bottom bg-dark p-5">
         <div className="m-5">
-          <div className="row m-4 text-secondary">
-              <div className="col-sm d-flex flex-column">
+          <div className="o-layout--4-col m-4 text-secondary">
+              <div className="d-flex flex-column">
                   <h3 className="text-light">Products</h3>
                   <p>Apple Watch Series</p>
                   <p>Refurbished iPad 4th</p>
@@ -15,7 +14,7 @@ class Bottom extends Component{
                   <p>Apple Magic Mouse</p>
               </div>
 
-              <div className="col-sm d-flex flex-column">
+              <div className="d-flex flex-column">
                   <h3 className="text-light">Customer Service</h3>
                   <p>News</p>
                   <p>FAQ</p>
@@ -24,7 +23,7 @@ class Bottom extends Component{
                   <p>Contacts</p>
               </div>
 
-              <div className="col-sm d-flex flex-column">
+              <div className="d-flex flex-column">
                   <h3 className="text-light">Socials</h3>
                   <p>Twitter</p>
                   <p>Youtube</p>
@@ -33,7 +32,7 @@ class Bottom extends Component{
                   <p>Facebook</p>
               </div>
 
-              <div className="col-sm d-flex flex-column">
+              <div className="d-flex flex-column">
                   <h3 className="text-light">Customer Care</h3>
                   <p>Sale</p>
                   <p>Shop</p>

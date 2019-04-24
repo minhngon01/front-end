@@ -251,7 +251,7 @@ class RecentProduct extends Component{
   }
   render(){
     return(
-      <div className="recent container">
+      <div className="container o-layout__shop-product">
           <ul className="nav nav-recent">
               <li className="nav-item px-4"><a className="recent-link" onClick={this.toggle(0)}>Recent</a></li>
               <li className="nav-item px-4"><a className="recent-link" onClick={this.toggle(1)}>Featured</a></li>

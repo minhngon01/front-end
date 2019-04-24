@@ -11,11 +11,9 @@ const CartSale = (props) => {
   let imageProducts = {
     backgroundImage : "url(" + product['image'] + ")"
   }
-
   return (
       <div className="c-card">
       <div className="c-card--basic__image" style={imageProducts}/>
-      <blockquote className="blockquote mb-0 card-body text-center">
         <StarRating/>
         <Link className="c-card--basic__name-product" to={"product/"+product['name-product']}>{product['name-product']}</Link>
         <div className="c-card--sale__price">
@@ -23,7 +21,6 @@ const CartSale = (props) => {
           <p className="c-card--sale__price-sale">$350.00</p>
         </div>
         <TimeCountDown time={product['time']}/>
-      </blockquote>
       <div className="c-card--sale__sale-tag">SALE!</div>
     </div>
 );

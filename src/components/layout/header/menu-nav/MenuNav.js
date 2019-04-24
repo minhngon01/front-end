@@ -4,8 +4,8 @@ import {Link} from 'react-router-dom'
 class MenuNav extends Component{
   render(){
     return(
-      <div className="container third-navigate pt-4 px-5">
-          <ul className="nav nav-pills">
+      <div className="container third-navigate pt-4 px-5 c-navBar__bottom-bar">
+          <ul className="c-navBar__bottom-bar__menu">
 
               <li className="nav-item">
                   <Link className="nav-link" to="/shop">Shop</Link>

@@ -1,18 +1,15 @@
 import React,{Component} from 'react';
-import "./advertise.css"
 class Advertise extends Component{
   render(){
     return(
-      <div className="advertise mb-5">
-        <div className="card text-white">
-          <div className="advertise-img-div card-img"src="https://gearburn.com/wp-content/uploads/2018/09/apple-watch-series-4.jpg" alt="Card image"/>
-          <div className=" card-img-overlay d-flex flex-column justify-content-center align-items-start ml-5">
-            <h1 className="title-advertise">New collection</h1>
-            <h1>Coming to town</h1>
-            <p className="">Introducing fashionable & gorgeous watch</p>
-            <p className="">From design to stylish</p>
-            <div className="button-readmore" >READ MORE</div>
-          </div>
+      <div className="c-advertise mb-5">
+          <div className="c-advertise__image"/>
+          <div className="c-advertise__overlay">
+            <h1 className="c-advertise__title">New collection</h1>
+            <h1 className="c-advertise__title">Coming to town</h1>
+            <p className="c-advertise__content">Introducing fashionable & gorgeous watch</p>
+            <p className="c-advertise__content">From design to stylish</p>
+            <button className="c-advertise__button" >READ MORE</button>
         </div>
       </div>
     )

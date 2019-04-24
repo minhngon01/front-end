@@ -14,7 +14,7 @@ import AllProduct from "./all-product/AllProduct";
 class Home extends Component{
   render(){
     return(
-      <div className="container-fluid px-0">
+      <div className="container-fluid px-0 home">
         <Advertise/>
         <Benefit/>
         <NewProduct/>

@@ -1,0 +1,22 @@
+.c-subcribe{
+  width:350px;
+  border-style: solid;
+  border-color: aliceblue;
+  border-width:3px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  &__input{
+    flex-grow: 1;
+    border-width:0px;
+  }
+  &__button{
+    border-width:0px;
+    color:rgb(0, 0, 255);
+    &:hover{
+      color: gray;
+      background-color: white;
+    }
+  }
+}

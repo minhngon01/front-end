@@ -60,6 +60,7 @@
     }
     @include desktop{
       grid-template-columns: 1fr 1fr 1fr 1fr;
+
     }
     @include large-desktop{
       grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -67,6 +68,8 @@
   }
   &--2-col{
     display:grid;
+    grid-column-gap: 30px;
+
     @include mobile{
       grid-template-columns: 100%;
     }
@@ -81,5 +84,35 @@
       grid-template-columns: 1fr 1fr;
     }
   }
+  &--3-5-col{
+    display:grid;
+    grid-column-gap: 50px;
+    @include mobile{
+      grid-template-columns: 100%;
+    }
+    @include tablet{
+      grid-template-columns: 100%;
+    }
+    @include desktop{
+      grid-template-columns: 2fr 1fr;
+    }
+    @include large-desktop{
+      grid-template-columns: 2fr 1fr;
+    }
+  }
+  &__shop-product{
+    @include mobile{
+      height: 2100px;
+    }
+    @include tablet{
+      height: 1100px;
+    }
+    @include desktop{
+      height:600px;
+    }
+    @include large-desktop{
+      height:600px;
 
+    }
+  }
 }

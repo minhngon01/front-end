@@ -6,7 +6,7 @@ import Authentication from './authentication/Authentication';
 class Header extends Component{
   render(){
     return(
-       <div class="navigate mb-2">
+       <div class="c-navBar mb-2">
         <Authentication/>
         <Search/>
         <MenuNav/>

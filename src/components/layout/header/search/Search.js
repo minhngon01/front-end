@@ -34,10 +34,12 @@ class Search extends Component{
               </div>
               <div className="c-cart__dropdown-content">
                 <CartPanel/>
-                {// <p> No products in your cart </p>
-                }
               </div>
-
+          </div>
+          <div className="c-navBar__middle-bar__button">
+            <div className="c-navBar__middle-bar__button__stick"/>
+            <div className="c-navBar__middle-bar__button__stick"/>
+            <div className="c-navBar__middle-bar__button__stick"/>
           </div>
       </div>
     )

@@ -1,5 +1,4 @@
 import React,{Component} from 'react';
-import "./bestseller.css";
 import Slider from "react-slick";
 import Cart from "../../Fragment/CartFragment/cart/Cart";
 class BestSeller extends Component{
@@ -100,35 +99,52 @@ class BestSeller extends Component{
     var settings = {
       dots: true,
       infinite: true,
-      slidesToShow: 4,
-      slidesToScroll: 3,
       autoplay: true,
-      autoplaySpeed: 3000,
+      autoplaySpeed: 2000,
       pauseOnHover: true,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+          }
+        },
+        {
+          breakpoint: 20000,
+          settings:{
+            slidesToShow: 4,
+            slidesToScroll: 4,
+          }
+        }
+      ],
       customPaging: i => (
         <div
           style={{
-            marginTop : "-550px",
-            marginLeft : "450px",
             width: "10px",
             height:"10px",
             backgroundColor: "grey",
             border: "0px solid",
             borderRadius: "50%",
-            top:"0%"
+            marginTop:"10px",
           }}
         >
         </div>
       )
     };
     return(
-      <div className="best-seller container">
+      <div className="container">
         <h3>Best seller</h3>
-        <div className="best-seller-box" id="container" >
           <Slider {...settings}>
             {this.bestSellerProducts.map( product => (<div className="px-3"><Cart product={product}/></div>))}
           </Slider>
-        </div>
       </div>
     )
   }

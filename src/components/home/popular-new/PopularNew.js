@@ -1,5 +1,4 @@
 import React,{Component} from 'react';
-import "./popularnew.css";
 import News from "../../Fragment/CartFragment/News/News";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -59,18 +58,38 @@ class PopularNew extends Component{
       autoplay: true,
       autoplaySpeed: 3000,
       pauseOnHover: true,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+          }
+        },
+        {
+          breakpoint: 1500,
+          settings:{
+            slidesToShow: 3,
+            slidesToScroll: 3,
+          }
+        }
+      ],
       customPaging: i => (
         <div
           style={{
-            marginTop : "-420px",
-            marginLeft : "450px",
             width: "10px",
             height:"10px",
             backgroundColor: "grey",
             border: "0px solid",
             borderRadius: "50%",
-            position:"absolute",
-            top:"0%"
+            marginTop:"10px"
           }}
         >
         </div>

@@ -1,5 +1,4 @@
 import React,{Component} from 'react';
-import "./AllProduct.css"
 import Product from "../../Fragment/Product/Product";
 
 class AllProduct extends Component{
@@ -50,20 +49,20 @@ class AllProduct extends Component{
   render(){
     return(
       <div className="container my-5 pl-0">
-        <div className="row">
-          <div className="col-sm-4 d-flex flex-column align-items-start" >
+        <div className="o-layout--3-col">
+          <div className="d-flex flex-column align-items-start" >
             <h3 className="product-heading"> Popular Products </h3>
-            <h4 className="product-title"><b>Top rated products </b></h4>
+            <h5 className="product-title"><b>Top rated products </b></h5>
             {this.products['top-rated-products'].map(product => (<Product product={product}/>))}
           </div>
-          <div className="col-sm-4 d-flex flex-column align-items-start" >
+          <div className="d-flex flex-column align-items-start" >
             <h3 className="product-heading"> Featured Products </h3>
-            <h4 className="product-title"><b> Products </b></h4>
+            <h5 className="product-title"><b> Products </b></h5>
             {this.products['products'].map(product => (<Product product={product}/>))}
           </div>
-         <div className="col-sm-4 d-flex flex-column align-items-start">
+         <div className="d-flex flex-column align-items-start">
             <h3 className="product-heading"> On-sale Products </h3>
-            <h4 className="product-title"><b>Recent Review</b> </h4>
+            <h5 className="product-title"><b>Recent Review</b> </h5>
             {this.products['recent-reviews'].map(product => (<Product product={product}/>))}
           </div>
         </div>

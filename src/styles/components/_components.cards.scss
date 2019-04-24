@@ -23,8 +23,8 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
-      height:50%;
-      width : 100%;
+      height:250px;
+      width :100%;
     }
     &__brand-name{
       text-align: center;
@@ -35,7 +35,6 @@
         color: $color_black;
         cursor: pointer;
         text-decoration: none;
-
       }
     }
     &__name-product{
@@ -183,4 +182,51 @@
     opacity: 0.8;
     transform: translateX(20px);
   }
+}
+
+.c-card-promotion{
+  height:300px;
+  width:100%;
+  border-width: 0px;
+  border-style: solid;
+  border-radius: 20px;
+  margin-bottom: 50px;
+  overflow: hidden;
+  position: relative;
+  &__image{
+    background: url(https://www.apple.com/v/macbook-pro/t/images/shared/og_image.png?201902191403);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100%;
+    width:100%;
+  }
+  &__overlay{
+    position: absolute;
+    top:20%;
+    left:15%;
+    color: white;
+    font-family: 'Heebo', sans-serif;
+
+  }
+  &__title{
+    font-size:2em;
+  }
+  &__name-product{
+    font-weight: bold;
+    font-size: 2em;
+  }
+  &__starting-at{
+    color: $color-gray;
+  }
+  &__price{
+    &--pink{
+      font-size: 4em;
+      color: #f9db76;
+    }
+    &--yellow{
+      font-size: 4em;
+      color: #fb8aaf;
+    }
+  }
+
 }
