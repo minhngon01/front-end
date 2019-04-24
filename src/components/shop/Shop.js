@@ -32,6 +32,17 @@ import Filter from './filter/Filter';
     }
   ]
 }
+
+
+  account={
+    first-name: string;
+    last-name: string;
+    counttry: vietnam;
+    email: string ;
+    password: string;
+    birthday: date;
+  }
+
 */
 
 class Shop extends React.Component{

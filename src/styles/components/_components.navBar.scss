@@ -4,35 +4,49 @@
   background-color: $color-white;
   box-shadow: 0 3px 4px #333;
   width:100%;
+  &__top{
+    display:flex;
+    flex-direction:column;
+    height: auto;
+  }
   &__top-bar{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    transform: scale(1,1);
+    @include mobile{
+        height:0px;
+        flex-direction: column;
+    }
+    @include tablet{
+        height:0px;
+        flex-direction: column;
+    }
+
     &__icon-toggle{
-      position: absolute;
-      left:50%;
-      top:4%;
-      @include mobile{
-          display: block;
-      }
-      @include tablet{
-          display: block;
-      }
-      @include desktop{
-          display: none;
-      }
-      @include large-desktop{
-          display: none;
+      display:none;
+      &__label{
+        margin:auto;
+        display:none;
+        @include mobile{
+            display:block;
+        }
+        @include tablet{
+            display:block;
+        }
       }
     }
     &__welcome{
       align-items: center;
       @include mobile{
-          display:none;
+          opacity: 0;
+          flex-direction: column;
+
       }
       @include tablet{
-          display:none;
+          opacity: 0;
+          flex-direction: column;
 
       }
       display: flex;
@@ -43,19 +57,8 @@
       display: flex;
       align-items: flex-end;
       justify-content: flex-end;
-
       flex-grow:1;
       &-group{
-        @include mobile{
-            margin:auto;
-            display:none;
-            flex-direction: column;
-        }
-        @include tablet{
-            display:none;
-            margin:auto;
-            flex-direction: column;
-        }
         text-align: center;
         margin-right:10%;
         display: flex;
@@ -63,38 +66,65 @@
         width:250px;
         align-items: space-around;
         justify-content: space-around;
-
+        &__link{
+          color: rgb(74,74,77);
+          font-weight: 600;
+          &:hover{
+            color: rgb(51,90,246);
+            text-decoration: none;
+          }
+        }
+        @include mobile{
+            margin:auto;
+            flex-direction: column;
+            opacity: 0;
+            display:none;
+        }
+        @include tablet{
+            margin:auto;
+            flex-direction: column;
+            opacity:0;
+            display:none;
+        }
       }
 
     }
   }
   &__middle-bar{
-
+    width: 80%;
+    display:flex;
+    flex-direction: row;
+    position: relative;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    @include mobile{
+        display: space-between;
+    }
+    @include tablet{
+        justify-content: space-between;
+    }
     &__logo{
-
+      object-fit: contain;
+      width: 12vw;
+      height: 12vw;
     }
     &__search-bar{
-
     }
     &__cart{
-
     }
     &__button{
       @include mobile{
-          display: block;
+          display: flex;
+          margin-left: 10px;
       }
       @include tablet{
-          display: block;
-      }
-      @include desktop{
-          display: none;
-      }
-      @include large-desktop{
-          display: none;
+          display: flex;
+          margin-left: 10px;
       }
       border-style: solid;
       border-width: 0px;
-      display: flex;
+      display: none;
       flex-direction: column;
       &__stick{
         background-color: $color-blue;
@@ -106,16 +136,61 @@
   }
   &__bottom-bar{
     position:relative;
+    width:70%;
     &__menu{
+      display:flex;
+      flex-direction: row;
+      justify-content: center;
       @include mobile{
+          height: 0px;
           flex-direction: column;
-
       }
       @include tablet{
+          height: 0px;
           flex-direction: column;
       }
-      display:flex;
+      &__item{
+        margin : 0px 4px 10px 4px;
+        color: rgb(74,74,77);
+        font-weight: 600;
+        &:hover{
+          color: rgb(51,90,246);
+          text-decoration: none;
+        }
+        @include mobile{
+
+            opacity: 0;
+            display:none;
+        }
+        @include tablet{
+
+            opacity: 0;
+            display:none;
+        }
+      }
     }
   }
+}
 
+
+
+.arrow-down{
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+@keyframes menuitem {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(-20px);
+  }
 }

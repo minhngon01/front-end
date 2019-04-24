@@ -9,7 +9,6 @@ class Header extends Component{
        <div class="c-navBar mb-2">
         <Authentication/>
         <Search/>
-        <MenuNav/>
        </div>
     )
   }
