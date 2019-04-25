@@ -1,5 +1,4 @@
 import React,{Component} from 'react';
-import './menuNav.css';
 import {Link} from 'react-router-dom'
 const MenuNav = (props) => {
     let menuItemAnimation = props.toggle === true ? {opacity: "1", display: 'flex'} : {};
