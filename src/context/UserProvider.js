@@ -14,37 +14,37 @@ class UserProvider extends Component {
       user_address   : "",
       is_female      : "",
       order: 0,
-      dispatchLogin = (JsonWebToken) => {
-
-      },
-
-      dispatchLogout = () => {
-
-      },
-
-      dispatchRegister = () => {
-
-      },
-
-      addToCart = ( product_id ) => {
-
-      },
-
-      addToWishList = (product_id) => {
-
-      },
-
-      deleteFromWishList = (product_id) => {
-
-      },
-
-      deleteFromCart = (product_id) => {
-
-      },
-
-      processPayment = () => {
-
-      },
+      // dispatchLogin = (JsonWebToken) => {
+      //
+      // },
+      //
+      // dispatchLogout = () => {
+      //
+      // },
+      //
+      // dispatchRegister = () => {
+      //
+      // },
+      //
+      // addToCart = ( product_id ) => {
+      //
+      // },
+      //
+      // addToWishList = (product_id) => {
+      //
+      // },
+      //
+      // deleteFromWishList = (product_id) => {
+      //
+      // },
+      //
+      // deleteFromCart = (product_id) => {
+      //
+      // },
+      //
+      // processPayment = () => {
+      //
+      // },
     }
   }
 

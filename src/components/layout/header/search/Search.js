@@ -27,7 +27,7 @@ class Search extends Component{
                     <a className="dropdown-item" href="#">Something else here</a>
                   </div>
                 </div>
-                <input type="text" className="c-search-bar__input" placeholder="Search for product"/>
+                <input type="text" className="c-search-bar__input" placeholder="Search for product" />
             </div>
 
             <div className="c-cart c-navBar__middle-bar__cart">

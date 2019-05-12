@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import {UserContext} from '../../context/UserProvider';
+// import {UserContext} from '../../context/UserProvider';
 
 class SignIn extends React.Component{
   constructor(props){
@@ -15,7 +15,7 @@ class SignIn extends React.Component{
   }
 
   requestToServer = (id, password, dispatchLogin) => {
-    
+
   }
 
   render(){
@@ -25,21 +25,18 @@ class SignIn extends React.Component{
           <div  className = "c-authentication__input c-authentication__input--id"
                 contenteditable="true"
                 value = {this.state.email}
-                onChange = {}
+
                 name = "email"
           />
           <div  className = "c-authentication__input c-authentication__input--password"
                 contenteditable = "true"
                 value = {this.state.password}
-                onChange = {}
+
                 name = "password"
           />
-          <UserContext.Consumer>
-            { ({dispatchLogin}) =>
               <button className="c-authentication__button"
-                      onClick = {this.requestToServer(this.state.email,this.state.password,dispatchLogin)}>Sign In</button>
-            }
-          </UserContext.Consumer>
+                      >Sign In</button>
+
           <Link to="/" className="forgot-email-addres">Forgot your ID or password?</Link>
           <Link to="/signup"className="register">Don't have an account? Create one now.</Link>
         </div>
@@ -48,3 +45,10 @@ class SignIn extends React.Component{
 }
 
 export default SignIn;
+//
+// <UserContext.Consumer>
+//   { () =>
+//     <button className="c-authentication__button"
+//             onClick = {this.requestToServer(this.state.email,this.state.password,dispatchLogin)}>Sign In</button>
+//   }
+// </UserContext.Consumer>
