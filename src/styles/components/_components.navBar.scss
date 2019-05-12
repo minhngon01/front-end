@@ -2,7 +2,7 @@
   z-index: 10000;
   position : relative;
   background-color: $color-white;
-  box-shadow: 0 3px 4px #333;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   width:100%;
   &__nonFloating{
     height: 200px;
@@ -211,8 +211,6 @@
     }
   }
 }
-
-
 
 .arrow-down{
   transform: rotate(45deg);

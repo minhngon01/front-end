@@ -71,11 +71,10 @@
     grid-column-gap: 30px;
 
     @include mobile{
-      grid-template-columns: 100%;
+      grid-template-columns: 1fr;
     }
     @include tablet{
-      grid-template-columns: 50% 50%;
-
+      grid-template-columns: 1fr 1fr;
     }
     @include desktop{
       grid-template-columns: 1fr 1fr;

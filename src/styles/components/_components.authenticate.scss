@@ -1,0 +1,109 @@
+.c-authentication{
+  display:flex;
+  flex-direction: column;
+  margin: 30px 10%;
+  &--sign-up{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px auto ;
+  }
+  &__input{
+    border-style:solid;
+    border-width:1px;
+    border-radius: 6px;
+    border-color:lightgrey;
+    background-color: white;
+    padding:18px 20px;
+    width:100%;
+    max-width: 460px;
+    margin:20px 0px;
+    &:focus{
+      outline: none;
+      &:before{
+        animation: sizeFont 0.1s ease-in forwards;
+      }
+    }
+    &--first-name{
+      position: relative;
+      &:before{
+        position:absolute;
+        top:20%;
+        content:"First name";
+        font-size:20px;
+        color:grey;
+      }
+    }
+    &--last-name{
+      position: relative;
+      &:before{
+        position:absolute;
+        top:20%;
+        content:"Last name";
+        font-size:20px;
+        color:grey;
+      }
+    }
+    &--birth-day{
+      position: relative;
+      &:before{
+        position:absolute;
+        top:20%;
+        content:"Birth day";
+        font-size:20px;
+        color:grey;
+      }
+    }
+    &--id{
+      position: relative;
+      &:before{
+        position:absolute;
+        top:20%;
+        content:"ID account";
+        font-size:20px;
+        color:grey;
+      }
+    }
+    &--password{
+      position: relative;
+      &:before{
+        position:absolute;
+        top:20%;
+        content:"password";
+        font-size:20px;
+        color:grey;
+      }
+    }
+    &--confirm-password{
+      position: relative;
+      &:before{
+        position:absolute;
+        top:20%;
+        content:"Confirm password";
+        font-size:20px;
+        color:grey;
+      }
+    }
+  }
+
+  &__button{
+    width:30%;
+    max-width: 460px;
+    padding-top:15px;
+    padding-bottom:15px;
+    border-style:solid;
+    border-width:1px;
+    border-radius: 6px;
+    border-color: lightgrey;
+  }
+}
+@keyframes sizeFont{
+  0%{
+    top:20%;
+    font-size:20px;
+  }
+  100%{
+    top:10%;
+    font-size:11px;
+  }
+}

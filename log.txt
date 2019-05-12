@@ -1,0 +1,360 @@
+commit 25704c3d955aa1a724c2d08fdcb3548f65f1de48
+Author: Nguyen Tan Dung <tandung251298@gmail.com>
+Date:   Thu Apr 25 21:59:26 2019 +0700
+
+    implement responsive for header, scroll header effect, modify some style
+
+commit 28c35c1a7c69b0e590ed479c2941a42f871b722b
+Author: Nguyen Tan Dung <tandung251298@gmail.com>
+Date:   Thu Apr 25 01:50:38 2019 +0700
+
+    add responsive middle bar and bottom bar
+
+commit 28191c24f19d1577933391fa26b24222fe224667
+Author: Nguyen Tan Dung <tandung251298@gmail.com>
+Date:   Wed Apr 24 11:35:41 2019 +0700
+
+    add resposive feature to website
+
+commit b2bd7fa7b5fa1c05f6c0fbdb072bfa155aad669e
+Author: Nguyen Tan Dung <tandung251298@gmail.com>
+Date:   Fri Apr 19 13:06:05 2019 +0700
+
+    refractor ITSCSS,  remove *.css file in Fragment folder
+
+commit 8d6ff85bb39fbf2e8b70f19cf10e8f52b840ff83
+Author: Nguyen Tan Dung <tandung251298@gmail.com>
+Date:   Tue Apr 9 10:56:12 2019 +0700
+
+    implement sign in page
+
+commit 7e4da7d6aa17ba495bfcd1bcfb9ee3d0c52a899c
+Author: Nguyen Tan Dung <tandung251298@gmail.com>
+Date:   Mon Apr 8 21:50:56 2019 +0700
+
+    add related products in detail prodcut page
+
+commit d38f594384b754180f2c29a4f10ac32f3a28b707
+Author: Nguyen Tan Dung <tandung251298@gmail.com>
+Date:   Mon Apr 8 20:59:39 2019 +0700
+
+    refractor features part
+
+commit 0160766cfe5669934b1d0c81fb96f9c9e04c9be8
+Merge: 471d22b 399e56b
+Author: Tấn Dũng Nguyễn <tandung251298@gmail.com>
+Date:   Mon Apr 8 12:58:12 2019 +0000
+
+    Merge branch 'master' into 'master'
+    
+    Feature News
+    
+    See merge request ttcnpm-oisp-2019/front-end!7
+
+commit 399e56b27e9913fa5f6d188bac070d3108b86e0a
+Author: minhngon01 <minhngon01@gmail.com>
+Date:   Sun Apr 7 22:45:37 2019 +0700
+
+    aboutus
+
+commit 067de8b86684ef7bc39b2a324f55d19f6eda7d38
+Author: minhngon01 <minhngon01@gmail.com>
+Date:   Sun Apr 7 19:08:38 2019 +0700
+
+    news
+
+commit 79dd28d529b47d5ff3f91eb93dd616ad07805538
+Merge: f0ab634 471d22b
+Author: minhngon01 <minhngon01@gmail.com>
+Date:   Sun Apr 7 14:22:06 2019 +0700
+
+    Merge remote-tracking branch 'upstream/master'
+
+commit 471d22b6364c83c225719a311b11ec8a535e043b
+Author: Nguyen Tan Dung <tandung251298@gmail.com>
+Date:   Sun Apr 7 08:03:55 2019 +0700
+
+    implement detail product page - 80% done
+
+commit f0ab634b5e7c636970c63ea75fff88a8cb34d470
+Author: minhngon01 <minhngon01@gmail.com>
+Date:   Sat Apr 6 22:10:18 2019 +0700
+
+    page news
+
+commit 164b2d79485f611a2d1ee07a1c47d893913f9ada
+Author: minhngon01 <minhngon01@gmail.com>
+Date:   Sat Apr 6 14:07:09 2019 +0700
+
+    faq
+
+commit 838c1c3a9987051491683f14f41b88ba026f873a
+Author: minhngon01 <minhngon01@gmail.com>
+Date:   Sat Apr 6 12:20:13 2019 +0700
+
+    faq
+
+commit 3950bd0b6ffc65e880239aa27de2899720ab55c2
+Merge: 0664728 a15ba68
+Author: minhngon01 <minhngon01@gmail.com>
+Date:   Sat Apr 6 09:02:44 2019 +0700
+
+    Merge remote-tracking branch 'upstream/master'
+
+commit 06647283a2867fa8895fa99084f7f9daa361caed
+Author: minhngon01 <minhngon01@gmail.com>
+Date:   Sat Apr 6 09:01:46 2019 +0700
+
+    faq
+
+commit a15ba6800801acb20e54ff5f738a5af5a543d0c4
+Author: Nguyen Tan Dung <tandung251298@gmail.com>
+Date:   Fri Apr 5 23:50:56 2019 +0700
+
+    refractor Product fragment, allproducts, filter
+
+commit 4b604713f4bc42b0fc3695ad6966d2cbc25ef7e1
+Author: Nguyen Tan Dung <tandung251298@gmail.com>
+Date:   Fri Apr 5 21:18:47 2019 +0700
+
+    refractor contacts code
+
+commit 7e6b65813e2fb3d71ff0526b308e0fbd50c0703e
+Merge: 976a72d 7e45eaa
+Author: Tấn Dũng Nguyễn <tandung251298@gmail.com>
+Date:   Fri Apr 5 13:40:19 2019 +0000
+
+    Merge branch 'master' into 'master'
+    
+    Contacts Page
+    
+    See merge request ttcnpm-oisp-2019/front-end!6
+
+commit 7e45eaa72cf4c68afb19058d7dfa40dece71c4a4
+Author: minhngon01 <minhngon01@gmail.com>
+Date:   Fri Apr 5 19:00:08 2019 +0700
+
+    merge
+
+commit 8a0530a93add7bdb815db08c8ac33ae3451fcc1b
+Merge: 2f0effb 976a72d
+Author: minhngon01 <minhngon01@gmail.com>
+Date:   Fri Apr 5 18:30:39 2019 +0700
+
+    Merge remote-tracking branch 'upstream/master'
+
+commit 976a72d6e6801a2547cf9f955f4bb51554853c8c
+Author: Nguyen Tan Dung <tandung251298@gmail.com>
+Date:   Thu Apr 4 21:20:00 2019 +0700
+
+    add time countdown and modify 'cart sale' with CountDown components, init detail product component
+
+commit 2f0effb7214ba2e516358ce0a7a1736f69aff8f3
+Author: minhngon01 <minhngon01@gmail.com>
+Date:   Thu Apr 4 16:25:16 2019 +0700
+
+    contact page
+
+commit 6b0de9aec0a63ce73034f86124ba38ac15f50a3e
+Author: minhngon01 <minhngon01@gmail.com>
+Date:   Thu Apr 4 13:18:52 2019 +0700
+
+    merge from Dung
+
+commit 6bb7fa23583d176cb0e37682d4f244513d3c4812
+Merge: cd4ee41 f50bc39
+Author: minhngon01 <minhngon01@gmail.com>
+Date:   Thu Apr 4 13:14:05 2019 +0700
+
+    Merge remote-tracking branch 'upstream/master'
+
+commit f50bc391ea3f34403c642d30b98fc5eba05502e9
+Author: Nguyen Tan Dung <tandung251298@gmail.com>
+Date:   Thu Apr 4 12:50:10 2019 +0700
+
+    refactor code
+
+commit f3496ab5e5388c1ceceddb4625dd2f5f2f837142
+Author: Nguyen Tan Dung <tandung251298@gmail.com>
+Date:   Wed Apr 3 22:43:54 2019 +0700
+
+    initial contextAPI, add animation translateY into home/recent
+
+commit cd4ee41f24c0c5d0231677a39a85aa74307c8e54
+Author: minhngon01 <minhngon01@gmail.com>
+Date:   Wed Apr 3 21:25:18 2019 +0700
+
+    Contacts google map
+
+commit 1de8648c5cd184d9e91990033b62b7c51e74a921
+Author: minhngon01 <minhngon01@gmail.com>
+Date:   Wed Apr 3 20:12:59 2019 +0700
+
+    home's product bottom
+
+commit 572dbccb3d058fa64fded8d55f475ffc84e74d27
+Author: minhngon01 <minhngon01@gmail.com>
+Date:   Wed Apr 3 19:09:47 2019 +0700
+
+    product in home's bottom
+
+commit 470dc24176a073eca7feb05c738e9a3040f73761
+Merge: beb4471 abfb64e
+Author: Nguyen Tan Dung <tandung251298@gmail.com>
+Date:   Wed Apr 3 18:09:59 2019 +0700
+
+    solve conflict merge products cart
+
+commit beb4471b21600f4496e320dc65c52bd921ff6ae8
+Author: Nguyen Tan Dung <tandung251298@gmail.com>
+Date:   Wed Apr 3 18:06:09 2019 +0700
+
+    add slider
+
+commit abfb64e25994a9731cc7b0f3090bebd7cb33193f
+Merge: 251f540 5fc88e4
+Author: Tấn Dũng Nguyễn <tandung251298@gmail.com>
+Date:   Wed Apr 3 11:05:10 2019 +0000
+
+    Merge branch 'master' into 'master'
+    
+    Master
+    
+    See merge request ttcnpm-oisp-2019/front-end!2
+
+commit 5fc88e45f19fa8603eceb9fe62c34d596d65b14c
+Author: minhngon01 <minhngon01@gmail.com>
+Date:   Wed Apr 3 15:14:26 2019 +0700
+
+    product-in-shop
+
+commit 2793f8cc14ce7a041e228db1c9aa46896f66be0b
+Merge: 17feca3 251f540
+Author: minhngon01 <minhngon01@gmail.com>
+Date:   Wed Apr 3 13:19:11 2019 +0700
+
+    homepage
+
+commit 251f5404386e3c5a2887da874ec4db37ad3b2795
+Author: Nguyen Tan Dung <tandung251298@gmail.com>
+Date:   Wed Apr 3 08:54:36 2019 +0700
+
+    set up feature router
+
+commit 17feca3a5993df775612378fe642f8434182b849
+Author: minhngon01 <minhngon01@gmail.com>
+Date:   Wed Apr 3 08:14:19 2019 +0700
+
+    modify-homepage
+
+commit 47a5e89b131d0548c10823b3ed51edee8267a428
+Author: Nguyen Tan Dung <tandung251298@gmail.com>
+Date:   Tue Apr 2 12:13:17 2019 +0700
+
+    reconstruct code, add popular new, add more css style
+
+commit cb3f38a21a589c6fae8eee8dbeded325c2997e59
+Merge: b7c8e2c d9ea7b4
+Author: Nguyen Tan Dung <tandung251298@gmail.com>
+Date:   Mon Apr 1 10:45:49 2019 +0700
+
+    solve conflict
+
+commit b7c8e2c086be8917045b832d65859e11cbb1383a
+Author: Nguyen Tan Dung <tandung251298@gmail.com>
+Date:   Mon Apr 1 10:37:47 2019 +0700
+
+    commit packet
+
+commit d9ea7b472b801c82720ed5a8d886615157eaa8ae
+Author: minhngon01 <minhngon01@gmail.com>
+Date:   Mon Apr 1 10:21:13 2019 +0700
+
+    filter and dropdown-search
+
+commit 33f64785a68c08f627c754b86b031acc68a55bb7
+Merge: 4c0b96d 6e971f0
+Author: Nguyen Tan Dung <tandung251298@gmail.com>
+Date:   Sat Mar 30 20:08:19 2019 +0700
+
+    Merge branch 'animation' of https://gitlab.com/ttcnpm-oisp-2019/front-end
+
+commit 4c0b96d9c459e067495eb7346823b61184b546d2
+Author: Nguyen Tan Dung <tandung251298@gmail.com>
+Date:   Sat Mar 30 14:56:51 2019 +0700
+
+    create shop, modify cart
+
+commit 6e971f0409eae94f38bcfa45cc95f5b0a6ed9539
+Author: minhngon01 <minhngon01@gmail.com>
+Date:   Sat Mar 30 12:48:47 2019 +0700
+
+    slick-best-seller
+
+commit ebea4b36a81bcb8d308214da5be91f0e6e57805e
+Merge: 38f021f 8589272
+Author: minhngon01 <minhngon01@gmail.com>
+Date:   Sat Mar 30 08:18:16 2019 +0700
+
+    Merge branch 'master' of gitlab.com:ttcnpm-oisp-2019/front-end into animation
+
+commit 8589272cfe55003a3af6961bd1017e282f3fc675
+Merge: fa26049 aff2de5
+Author: Nguyen Tan Dung <tandung251298@gmail.com>
+Date:   Sat Mar 30 00:53:55 2019 +0700
+
+    solve conflict
+
+commit fa260499f48b8ee7d290ad65b69103785c6d96d1
+Author: Nguyen Tan Dung <tandung251298@gmail.com>
+Date:   Sat Mar 30 00:50:08 2019 +0700
+
+    merge animation and add new animation in menu nav bar
+
+commit 38f021fe65d35de848582e6d127499faa953e801
+Author: minhngon01 <minhngon01@gmail.com>
+Date:   Fri Mar 29 20:44:28 2019 +0700
+
+    shopping cart animation
+
+commit 708064f4f2462c92d66ea3d3c4805339630e9e22
+Author: minhngon01 <minhngon01@gmail.com>
+Date:   Fri Mar 29 20:26:08 2019 +0700
+
+    add a test file
+
+commit aff2de58ed7e8dfeb415d5f427dc469aeea1d1a4
+Author: minhngon01 <minhngon01@gmail.com>
+Date:   Fri Mar 29 20:11:42 2019 +0700
+
+    test
+
+commit a92e629f5cf7e28ec9682e7b9453f4e14b509eeb
+Author: Nguyen Tan Dung <tandung251298@gmail.com>
+Date:   Thu Mar 28 22:08:15 2019 +0700
+
+    reinitial project
+
+commit f63082ba739afea1e146fb75aed8cb0156227a2c
+Author: Nguyen Tan Dung <tandung251298@gmail.com>
+Date:   Sat Mar 16 13:14:56 2019 +0700
+
+    add header components
+
+commit efa91eda6f59d55e512bd4bc0fc7fbe185f13893
+Author: Nguyen Tan Dung <tandung251298@gmail.com>
+Date:   Wed Mar 6 23:04:51 2019 +0700
+
+    "commit first"
+
+commit b18790f26e8325217b0208c93c0cae0c37a344ba
+Author: Nguyen Tan Dung <tandung251298@gmail.com>
+Date:   Wed Mar 6 23:01:33 2019 +0700
+
+    "commit first"
+
+commit 57bf9d205b5ebd09f7138dee073d6cdf1ee6d449
+Author: Nguyen Tan Dung <tandung251298@gmail.com>
+Date:   Wed Mar 6 23:00:50 2019 +0700
+
+    "commit first"

@@ -1,18 +1,39 @@
 import React from 'react';
-import './signin.css';
 import {Link} from 'react-router-dom';
 class SignUp extends React.Component{
+  constructor(props){
+    super(props);
+    this.state = {
+      user_email       : "",
+      user_password    : "",
+      user_lastname    : "",
+      user_firstname   : "",
+      user_phone       : "",
+      user_address     : "",
+      is_female        : "",
+      confirm_password : "",
+    }
+  }
+  handleInputChange = e => {
+    this.setState( {[e.target.name] : e.target.value});
+  }
+
+  requestToServer = () => {
+
+  }
   render(){
     return(
-      <div className="container">
-        <div className="sign-in-container my-5 d-flex flex-column">
-          <h1 className="font-sign-in mb-3">Sign in for faster checkout.</h1>
-          <div className="id-input" contenteditable="true"/>
-          <div className="password-input" contenteditable="true"/>
-          <button className="btn btn-primary btn-modify my-3" >Sign In</button>
-          <Link to="/" className="forgot-email-addres">Forgot your ID or password?</Link>
-          <Link to="/signup"className="register">Dont have an account? Create one now.</Link>
-        </div>
+      <div className="c-authentication--sign-up ">
+        <h1 className="font-sign-in mb-3">Sign Up for access our services.</h1>
+        <div className="c-authentication__input c-authentication__input--first-name" contenteditable="true" name="user_firstname"/>
+        <div className="c-authentication__input c-authentication__input--last-name" contenteditable="true"  name="user_lastname"/>
+        <div className="c-authentication__input c-authentication__input--birth-day" contenteditable="true" name=""/>
+
+        <div className="c-authentication__input c-authentication__input--id" contenteditable="true" name="user_email"/>
+        <div className="c-authentication__input c-authentication__input--password" contenteditable="true" name="user_password"/>
+        <div className="c-authentication__input c-authentication__input--confirm-password" contenteditable="true" name="confirm_password"/>
+
+        <button className="c-authentication__button" onClick={this.requestToServer}>Sign Up</button>
       </div>
     )
   }
