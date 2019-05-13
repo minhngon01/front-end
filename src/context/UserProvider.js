@@ -1,8 +1,8 @@
-import {React,Component} from 'react';
+import React from 'react';
+import jwt from 'jsonwebtoken';
+export const UserContext = React.createContext();
 
-const UserContext = React.createContext();
-
-class UserProvider extends Component {
+export default class UserProvider extends React.Component {
   constructor(props){
     super(props)
     this.state={
@@ -13,18 +13,39 @@ class UserProvider extends Component {
       user_email     : "",
       user_address   : "",
       is_female      : "",
-      order: 0,
-      // dispatchLogin = (JsonWebToken) => {
+      order: [],
+      dispatchLogin : (JsonWebToken) => {
+        var decoded = jwt.decode(JsonWebToken);
+        var {user_email, user_phone, is_female, user_firstname, user_lastname, user_address} = decoded;
+        this.setState({
+          isLogin : true,
+          user_firstname : user_firstname,
+          user_lastname  : user_lastname,
+          user_phone     : user_phone,
+          user_email     : user_email,
+          user_address   : user_address,
+          is_female      : is_female,
+
+          /*
+            set order here
+          */
+        })
+        localStorage.setItem("token", JsonWebToken);
+      },
+      dispatchLogout : () => {
+        this.setState({
+          isLogin : false,
+          user_firstname : "",
+          user_lastname  : "",
+          user_phone     : "",
+          user_email     : "",
+          user_address   : "",
+          is_female      : "",
+          order: [],
+        })
+        localStorage.removeItem("token");
+      },
       //
-      // },
-      //
-      // dispatchLogout = () => {
-      //
-      // },
-      //
-      // dispatchRegister = () => {
-      //
-      // },
       //
       // addToCart = ( product_id ) => {
       //
@@ -49,7 +70,19 @@ class UserProvider extends Component {
   }
 
   componentDidMount(){
-
+    if(localStorage.token){
+      var decoded = jwt.decode(localStorage.token);
+      var {user_email, user_phone, is_female, user_firstname, user_lastname, user_address} = decoded;
+      this.setState({
+        isLogin : true,
+        user_firstname : user_firstname,
+        user_lastname  : user_lastname,
+        user_phone     : user_phone,
+        user_email     : user_email,
+        user_address   : user_address,
+        is_female      : is_female,
+      })
+    }
   }
 
 
@@ -62,4 +95,3 @@ class UserProvider extends Component {
     )
   }
 }
-export default UserContext;

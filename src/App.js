@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import SignIn from './components/sign-in/SignIn';
-import SignUp from './components/sign-up/SignUp';
 
+/*    style     */
 import './styles/main.scss';
 /*
   Web's Components
 */
 import Header from './components/layout/header/Header';
 import Bottom from './components/layout/bottom/Bottom';
-
 import Home from './components/home/Home';
 import Shop from './components/shop/Shop';
 import Contacts from './components/feature/Contacts/Contacts';
@@ -18,6 +16,12 @@ import FAQ from './components/feature/FAQ/FAQ';
 import News from './components/feature/News/News';
 import Sale from './components/feature/Sale/Sale';
 import DetailProduct from './components/detail-product/DetailProduct';
+import SignIn from './components/sign-in/SignIn';
+import SignUp from './components/sign-up/SignUp';
+/* context API */
+import UserProvider from './context/UserProvider';
+
+
 /*
   external library
 */
@@ -29,26 +33,28 @@ library.add(faIgloo,faStar, faSearch,faCartPlus,faHome,faPaperPlane,faHeadset,fa
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <BrowserRouter>
-          <div className="App">
-            <Header/>
-            <Switch>
-              <Route exact path="/" component={Home} />
-              <Route path="/signin" component={SignIn}/>
-              <Route path="/signup" component={SignUp}/>
-              <Route path="/shop" component={Shop}/>
-              <Route path="/Contacts" component={Contacts}/>
-              <Route path="/aboutus" component={AboutUs}/>
-              <Route path="/news" component={News}/>
-              <Route path="/FAQ" component={FAQ}/>
-              <Route path="/sale" component={Sale}/>
-              <Route path="/product/:id" component={DetailProduct}/>
-            </Switch>
-          <Bottom/>
-          </div>
-        </BrowserRouter>
-      </div>
+      <UserProvider>
+        <div className="App">
+          <BrowserRouter>
+            <div className="App">
+              <Header/>
+              <Switch>
+                <Route exact path="/" component={Home} />
+                <Route path="/signin" component={SignIn}/>
+                <Route path="/signup" component={SignUp}/>
+                <Route path="/shop" component={Shop}/>
+                <Route path="/Contacts" component={Contacts}/>
+                <Route path="/aboutus" component={AboutUs}/>
+                <Route path="/news" component={News}/>
+                <Route path="/FAQ" component={FAQ}/>
+                <Route path="/sale" component={Sale}/>
+                <Route path="/product/:id" component={DetailProduct}/>
+              </Switch>
+            <Bottom/>
+            </div>
+          </BrowserRouter>
+        </div>
+      </UserProvider>
     );
   }
 }

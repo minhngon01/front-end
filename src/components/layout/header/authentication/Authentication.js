@@ -1,6 +1,8 @@
 import React,{Component} from 'react';
 import SignIn from '../../../sign-in/SignIn';
 import {Link} from 'react-router-dom';
+import {UserContext} from '../../../../context/UserProvider';
+
 class Authentication extends Component{
   constructor(props){
     super(props);
@@ -23,9 +25,29 @@ class Authentication extends Component{
               </div>
               <div className="c-navBar__top-bar__authenticate">
                 <div className="c-navBar__top-bar__authenticate-group" style={animationToggle_welcome}>
-                      <Link className="c-navBar__top-bar__authenticate-group__link" to="/signup">Sign up</Link>
-                      <Link className="c-navBar__top-bar__authenticate-group__link" to="/signin">Sign in</Link>
-                      <Link className="c-navBar__top-bar__authenticate-group__link" to="/mylist">My list</Link>
+                  <UserContext.Consumer>
+                    { (state) =>
+                      { return !state.isLogin ?
+                          (
+                            <React.Fragment>
+                              <Link className="c-navBar__top-bar__authenticate-group__link" to="/signup">Sign up</Link>
+                              <Link className="c-navBar__top-bar__authenticate-group__link" to="/signin">Sign in</Link>
+                              <Link className="c-navBar__top-bar__authenticate-group__link" to="/mylist">My list</Link>
+                            </React.Fragment>
+                        )
+                          :
+                          (
+                            <React.Fragment>
+                              {state.user_lastname}
+                              <Link className="c-navBar__top-bar__authenticate-group__link" to="/" onClick={state.dispatchLogout} >Sign out</Link>
+                              <Link className="c-navBar__top-bar__authenticate-group__link" to="/mylist">My list</Link>
+
+                            </React.Fragment>
+                          )
+                      }
+                    }
+                  </UserContext.Consumer>
+
                 </div>
               </div>
             </div>
