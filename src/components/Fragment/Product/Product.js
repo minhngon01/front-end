@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const Product =  (props) => {
   let product = props.product;
   let img = {
-    backgroundImage   : "url(" + product['image'] + ")",
+    backgroundImage   : "url(" + product['product_image_url'] + ")",
 
 
   };
@@ -15,7 +15,7 @@ const Product =  (props) => {
       <div className = "c-product__image" style={img}/>
       <div className = "d-flex flex-column">
         <div className = "c-product__price">
-          {product.price}
+          {product.product_price}
         </div>
         <StarRating/>
       </div>

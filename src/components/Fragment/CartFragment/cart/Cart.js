@@ -2,11 +2,13 @@ import React from 'react';
 import StarRating from "../../StarRating/StarRating";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {Link} from 'react-router-dom';
+import {UserContext} from '../../../../context/UserProvider';
+
 // {
-//   'name-product' : "Samsung Galaxy J5 Black",
-//   'branch' : 'Samsung',
-//   'sub-branch' : 'Samsung Phone',
-//   'type' : 'Cell Phones',
+//   'product_name' : "Samsung Galaxy J5 Black",
+//   'product_brand' : 'Samsung',
+//   'product_brand' : 'Samsung Phone',
+//   'product_type' : 'Cell Phones',
 //   'price' : '$200.00',
 //   'amount-available' : 2,
 //   'rating' : 4,
@@ -14,9 +16,9 @@ import {Link} from 'react-router-dom';
 // },
 const Cart = props => {
   let product = props.product;
-  console.log(product['image']);
+  console.log(product['product_image_url']);
   let imageProducts = {
-    backgroundImage : "url(" + product['image'] + ")"
+    backgroundImage : "url(" + product['product_image_url'] + ")"
   }
 
   return(
@@ -24,15 +26,19 @@ const Cart = props => {
         <div className="c-card--basic__image" style={imageProducts}/>
 
           <div className="c-card--basic__brand-name">
-            {product['type']+', '+product['sub-branch']}
+            {product['product_type']+', '+product['product_brand']}
           </div>
-          <Link className="c-card--basic__name-product" to={"/product/"+product['name-product']}>{product['name-product']}</Link>
+          <Link className="c-card--basic__product_name" to={"/product/"+product['product_id']}>{product['product_name']}</Link>
           <div className="c-card--basic__price">
-          {product['price']}
+          {product['product_price']}
           </div>
           <StarRating />
+          <UserContext.Consumer>
+            {
+              (state) => <div className="c-card--basic__button" onClick={state.addToCart(product['product_id'])}>ADD TO CART</div>
+            }
 
-          <div className="c-card--basic__button" >ADD TO CART</div>
+          </UserContext.Consumer>
           <div className={"c-card--basic-icon"}>
             <div className={"c-card--basic-icon__item" }>
               <FontAwesomeIcon className={"icon-heart"} icon="heart" color="black"/>

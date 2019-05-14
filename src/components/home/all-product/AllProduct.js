@@ -5,44 +5,44 @@ class AllProduct extends Component{
   products = {
     "top-rated-products" : [
       {
-        'price' : '$168.00',
-        'image' : 'https://devicer.cmsmasters.net/wp-content/uploads/2017/09/11-2-540x540.jpg'
+        'product_price' : '$168.00',
+        'product_image_url' : 'https://devicer.cmsmasters.net/wp-content/uploads/2017/09/11-2-540x540.jpg'
       },
       {
-        'price' : '$800.00',
-        'image' : 'https://devicer.cmsmasters.net/wp-content/uploads/2015/05/9-3.jpg'
+        'product_price' : '$800.00',
+        'product_image_url' : 'https://devicer.cmsmasters.net/wp-content/uploads/2015/05/9-3.jpg'
       },
       {
-        'price' : '$900.00',
-        'image' : 'https://devicer.cmsmasters.net/wp-content/uploads/2017/09/12-2-540x540.jpg'
+        'product_price' : '$900.00',
+        'product_image_url' : 'https://devicer.cmsmasters.net/wp-content/uploads/2017/09/12-2-540x540.jpg'
       }
     ],
     "products": [
       {
-        'price' : '$60.00',
-        'image' : 'https://devicer.cmsmasters.net/wp-content/uploads/2015/05/29-2-540x540.jpg'
+        'product_price' : '$60.00',
+        'product_image_url' : 'https://devicer.cmsmasters.net/wp-content/uploads/2015/05/29-2-540x540.jpg'
       },
       {
-        'price' : '$300.00',
-        'image' : 'https://devicer.cmsmasters.net/wp-content/uploads/2015/05/8-3-540x540.jpg'
+        'product_price' : '$300.00',
+        'product_image_url' : 'https://devicer.cmsmasters.net/wp-content/uploads/2015/05/8-3-540x540.jpg'
       },
       {
-        'price' : '$400.00',
-        'image' : 'https://devicer.cmsmasters.net/wp-content/uploads/2017/05/3-540x540.jpg'
+        'product_price' : '$400.00',
+        'product_image_url' : 'https://devicer.cmsmasters.net/wp-content/uploads/2017/05/3-540x540.jpg'
       }
     ],
     "recent-reviews": [
       {
-        'price' : '$55.00',
-        'image' : 'https://devicer.cmsmasters.net/wp-content/uploads/2017/09/10-2-540x540.jpg'
+        'product_price' : '$55.00',
+        'product_image_url' : 'https://devicer.cmsmasters.net/wp-content/uploads/2017/09/10-2-540x540.jpg'
       },
       {
-        'price' : '$140.00',
-        'image' : 'https://devicer.cmsmasters.net/wp-content/uploads/2017/09/17-3-540x540.jpg'
+        'product_price' : '$140.00',
+        'product_image_url' : 'https://devicer.cmsmasters.net/wp-content/uploads/2017/09/17-3-540x540.jpg'
       },
       {
-        'price' : '$40.00',
-        'image' : 'https://devicer.cmsmasters.net/wp-content/uploads/2017/05/3-540x540.jpg'
+        'product_price' : '$40.00',
+        'product_image_url' : 'https://devicer.cmsmasters.net/wp-content/uploads/2017/05/3-540x540.jpg'
       }
     ]
   }

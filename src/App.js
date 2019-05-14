@@ -18,6 +18,8 @@ import Sale from './components/feature/Sale/Sale';
 import DetailProduct from './components/detail-product/DetailProduct';
 import SignIn from './components/sign-in/SignIn';
 import SignUp from './components/sign-up/SignUp';
+import Cart from './components/cart/Cart';
+
 /* context API */
 import UserProvider from './context/UserProvider';
 
@@ -41,6 +43,8 @@ class App extends Component {
               <Switch>
                 <Route exact path="/" component={Home} />
                 <Route path="/signin" component={SignIn}/>
+                <Route path="/cart" component={Cart}/>
+
                 <Route path="/signup" component={SignUp}/>
                 <Route path="/shop" component={Shop}/>
                 <Route path="/Contacts" component={Contacts}/>

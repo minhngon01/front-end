@@ -9,18 +9,18 @@ const CartSale = (props) => {
   let product = props.product;
 
   let imageProducts = {
-    backgroundImage : "url(" + product['image'] + ")"
+    backgroundImage : "url(" + product['product_image_url'] + ")"
   }
   return (
       <div className="c-card">
       <div className="c-card--basic__image" style={imageProducts}/>
         <StarRating/>
-        <Link className="c-card--basic__name-product" to={"product/"+product['name-product']}>{product['name-product']}</Link>
+        <Link className="c-card--basic__name-product" to={"product/"+product['product_id']}>{product['product_name']}</Link>
         <div className="c-card--sale__price">
-          <p className="c-card--sale__price-actual">$400.00</p>
-          <p className="c-card--sale__price-sale">$350.00</p>
+          <p className="c-card--sale__price-actual">{product['product_price']}</p>
+          <p className="c-card--sale__price-sale">{product['sale_price']}</p>
         </div>
-        <TimeCountDown time={product['time']}/>
+        <TimeCountDown time={product['sale_date']}/>
       <div className="c-card--sale__sale-tag">SALE!</div>
     </div>
 );

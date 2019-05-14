@@ -32,7 +32,7 @@ class Authentication extends Component{
                             <React.Fragment>
                               <Link className="c-navBar__top-bar__authenticate-group__link" to="/signup">Sign up</Link>
                               <Link className="c-navBar__top-bar__authenticate-group__link" to="/signin">Sign in</Link>
-                              <Link className="c-navBar__top-bar__authenticate-group__link" to="/mylist">My list</Link>
+                              <Link className="c-navBar__top-bar__authenticate-group__link" to="/cart">My cart</Link>
                             </React.Fragment>
                         )
                           :
@@ -40,7 +40,7 @@ class Authentication extends Component{
                             <React.Fragment>
                               {state.user_lastname}
                               <Link className="c-navBar__top-bar__authenticate-group__link" to="/" onClick={state.dispatchLogout} >Sign out</Link>
-                              <Link className="c-navBar__top-bar__authenticate-group__link" to="/mylist">My list</Link>
+                              <Link className="c-navBar__top-bar__authenticate-group__link" to="/cart">My cart</Link>
 
                             </React.Fragment>
                           )

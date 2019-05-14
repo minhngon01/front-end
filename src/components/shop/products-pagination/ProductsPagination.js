@@ -3,7 +3,7 @@ import Cart from '../../Fragment/CartFragment/cart/Cart';
 import ReactPaginate from 'react-paginate';
 import ShopProducts from '../shop-products/ShopProducts';
 import './productspagination.css';
-
+import axios from 'axios';
 class ProductsPagination extends React.Component{
   constructor(props){
     super(props);
@@ -11,16 +11,38 @@ class ProductsPagination extends React.Component{
       data : [],
       offset : 0,
       pageCount : 5,
+      products : []
     }
   }
+  componentDidMount() {
+    axios({
+      method : 'GET',
+      url    : "http://localhost:3003/products/page-product",
+      params : {
+        offset : 0,
+      }
+    })
+    .then(products => {
+      this.setState({products : products.data.products})
+    })
+  }
   handlePageClick = data => {
-
+    axios({
+      method : 'GET',
+      url    : "http://localhost:3003/products/page-product",
+      params : {
+        offset : 0,
+      }
+    })
+    .then(products => {
+      this.setState({products : products.data.products})
+    })
   }
 
   render(){
     return(
       <div className="products-shop">
-        <ShopProducts products={this.props.products}/>
+        <ShopProducts products={this.state.products}/>
         <ReactPaginate
           previousLabel={''}
           nextLabel={'>'}
