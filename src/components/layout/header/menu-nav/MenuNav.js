@@ -5,7 +5,7 @@ const MenuNav = (props) => {
     let menuAnimation = props.toggle ===true ? {height : "200px"} : {};
     return(
       <div className="c-navBar__bottom-bar">
-        <div className="c-navBar__bottom-bar__menu" style={menuAnimation}>
+        <div className="c-navBar__bottom-bar__menu " style={menuAnimation}>
               <Link className="c-navBar__bottom-bar__menu__item" style={menuItemAnimation} to="/shop">Shop</Link>
               <Link className="c-navBar__bottom-bar__menu__item" style={menuItemAnimation} to="/aboutus"> About Us</Link>
               <Link className="c-navBar__bottom-bar__menu__item" style={menuItemAnimation} to="/news"> News</Link>

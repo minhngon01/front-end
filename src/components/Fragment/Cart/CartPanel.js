@@ -1,6 +1,7 @@
 import React from 'react';
 import ProductInCart from './ProductInCart';
 import {UserContext} from '../../../context/UserProvider';
+import {Link} from 'react-router-dom'
 const CartPanel = (props) => {
 
   return(
@@ -16,7 +17,7 @@ const CartPanel = (props) => {
         </UserContext.Consumer>
         <div className="c-cart-panel__subtotal">SubTotal: $575.00</div>
         <div className="d-flex justify-content-around">
-          <button className="c-cart-panel__view-cart">VIEW CART</button>
+          <Link to="/cart"><button className="c-cart-panel__view-cart">VIEW CART</button></Link>
           <button className="c-cart-panel__checkout">CHECKOUT</button>
         </div>
       </div>

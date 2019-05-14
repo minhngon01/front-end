@@ -20,16 +20,16 @@ const devices = [
 class Filter extends React.Component{
   products = [
     {
-      'price' : '$168.00',
-      'image' : 'https://devicer.cmsmasters.net/wp-content/uploads/2017/09/11-2-540x540.jpg'
+      'product_price' : '$168.00',
+      'product_image_url' : 'https://devicer.cmsmasters.net/wp-content/uploads/2017/09/11-2-540x540.jpg'
     },
     {
-      'price' : '$700.00',
-      'image' : 'https://devicer.cmsmasters.net/wp-content/uploads/2015/05/9-3.jpg'
+      'product_price' : '$700.00',
+      'product_image_url' : 'https://devicer.cmsmasters.net/wp-content/uploads/2015/05/9-3.jpg'
     },
     {
-      'price' : '$700.00',
-      'image' : 'https://devicer.cmsmasters.net/wp-content/uploads/2017/09/12-2-540x540.jpg'
+      'product_price' : '$700.00',
+      'product_image_url' : 'https://devicer.cmsmasters.net/wp-content/uploads/2017/09/12-2-540x540.jpg'
     }
   ]
   render(){

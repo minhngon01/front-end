@@ -3,6 +3,7 @@ import StarRating from "../../StarRating/StarRating";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {Link} from 'react-router-dom';
 import {UserContext} from '../../../../context/UserProvider';
+import  { Redirect } from 'react-router-dom'
 
 // {
 //   'product_name' : "Samsung Galaxy J5 Black",
@@ -20,7 +21,10 @@ const Cart = props => {
   let imageProducts = {
     backgroundImage : "url(" + product['product_image_url'] + ")"
   }
-
+  let checkSignIn = (addToCart) => _ => {
+    props.history.push("/")
+    addToCart(product['product_id'])
+  }
   return(
       <div className="c-card">
         <div className="c-card--basic__image" style={imageProducts}/>
@@ -28,14 +32,15 @@ const Cart = props => {
           <div className="c-card--basic__brand-name">
             {product['product_type']+', '+product['product_brand']}
           </div>
-          <Link className="c-card--basic__product_name" to={"/product/"+product['product_id']}>{product['product_name']}</Link>
+          <Link className="c-card--basic__name-product" to={"/product/"+product['product_id']}>{product['product_name']}</Link>
           <div className="c-card--basic__price">
-          {product['product_price']}
+            {'$'+product['product_price']}
           </div>
           <StarRating />
           <UserContext.Consumer>
             {
-              (state) => <div className="c-card--basic__button" onClick={state.addToCart(product['product_id'])}>ADD TO CART</div>
+              (state) =>   <div className="c-card--basic__button" onClick={checkSignIn(state.addToCart)}>ADD TO CART</div>
+
             }
 
           </UserContext.Consumer>
