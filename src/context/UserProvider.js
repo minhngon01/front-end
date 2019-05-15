@@ -69,6 +69,7 @@ export default class UserProvider extends React.Component {
         })
       },
       addToCart : ( product_id ) => _ =>{
+        console.log("QQQ")
         axios({
           method : "post",
           url    : "http://localhost:3003/carts/",

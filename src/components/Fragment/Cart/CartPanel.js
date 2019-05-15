@@ -15,8 +15,7 @@ const CartPanel = (props) => {
             }
           }
         </UserContext.Consumer>
-        <div className="c-cart-panel__subtotal">SubTotal: $575.00</div>
-        <div className="d-flex justify-content-around">
+        <div className="d-flex justify-content-around my-3">
           <Link to="/cart"><button className="c-cart-panel__view-cart">VIEW CART</button></Link>
           <button className="c-cart-panel__checkout">CHECKOUT</button>
         </div>

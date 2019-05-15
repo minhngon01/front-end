@@ -15,48 +15,62 @@ import  { Redirect } from 'react-router-dom'
 //   'rating' : 4,
 //   'image' : "https://devicer.cmsmasters.net/wp-content/uploads/2017/09/20-2.jpg",
 // },
-const Cart = props => {
-  let product = props.product;
-  console.log(product['product_image_url']);
-  let imageProducts = {
-    backgroundImage : "url(" + product['product_image_url'] + ")"
+class Cart extends React.Component{
+  constructor(props){
+    super(props);
+    this.state = {
+      directToLoginpage : false
+    }
   }
-  let checkSignIn = (addToCart) => _ => {
-    props.history.push("/")
-    addToCart(product['product_id'])
+
+  checkSignIn = (addToCart,product,isLogin) => _ => {
+    if(isLogin){
+      addToCart(product.product_id)()
+    }
+    else {
+      this.setState({directToLoginpage : true})
+    }
   }
-  return(
-      <div className="c-card">
-        <div className="c-card--basic__image" style={imageProducts}/>
+  render(){
+    let product = this.props.product;
+    console.log(product['product_image_url']);
+    let imageProducts = {
+      backgroundImage : "url(" + product['product_image_url'] + ")"
+    }
+    return this.state.directToLoginpage ? <Redirect to="signin"/> :
+    (
+        <div className="c-card">
+          <div className="c-card--basic__image" style={imageProducts}/>
 
-          <div className="c-card--basic__brand-name">
-            {product['product_type']+', '+product['product_brand']}
-          </div>
-          <Link className="c-card--basic__name-product" to={"/product/"+product['product_id']}>{product['product_name']}</Link>
-          <div className="c-card--basic__price">
-            {'$'+product['product_price']}
-          </div>
-          <StarRating />
-          <UserContext.Consumer>
-            {
-              (state) =>   <div className="c-card--basic__button" onClick={checkSignIn(state.addToCart)}>ADD TO CART</div>
+            <div className="c-card--basic__brand-name">
+              {product['product_type']+', '+product['product_brand']}
+            </div>
+            <Link className="c-card--basic__name-product" to={"/product/"+product['product_id']}>{product['product_name']}</Link>
+            <div className="c-card--basic__price">
+              {'$'+product['product_price']}
+            </div>
+            <StarRating />
+            <UserContext.Consumer>
+              {
+                (state) =>   <div className="c-card--basic__button" onClick={this.checkSignIn(state.addToCart,product,state.isLogin)}>ADD TO CART</div>
+              }
 
-            }
-
-          </UserContext.Consumer>
-          <div className={"c-card--basic-icon"}>
-            <div className={"c-card--basic-icon__item" }>
-              <FontAwesomeIcon className={"icon-heart"} icon="heart" color="black"/>
-            </div>
-            <div className = "c-card--basic-icon__item" >
-              <FontAwesomeIcon className={"icon-heart"} icon="recycle" color="black"/>
-            </div>
-            <div className = {"c-card--basic-icon__item" }>
-              <FontAwesomeIcon className={"icon-heart"} icon="search" color="black"/>
+            </UserContext.Consumer>
+            <div className={"c-card--basic-icon"}>
+              <div className={"c-card--basic-icon__item" }>
+                <FontAwesomeIcon className={"icon-heart"} icon="heart" color="black"/>
+              </div>
+              <div className = "c-card--basic-icon__item" >
+                <FontAwesomeIcon className={"icon-heart"} icon="recycle" color="black"/>
+              </div>
+              <div className = {"c-card--basic-icon__item" }>
+                <FontAwesomeIcon className={"icon-heart"} icon="search" color="black"/>
+              </div>
             </div>
           </div>
-        </div>
-  )
+    )
+  }
+
 }
 
 export default Cart;
