@@ -17,7 +17,7 @@ export default class StarRating extends React.Component  {
   }
 
   handleSubmit1= _ => {
-    if(localStorage.getItem("isLogin")==="false"){
+    if(!localStorage.getItem("isLogin")){
       window.location.replace('/signin')
     }
     else{
@@ -30,7 +30,7 @@ export default class StarRating extends React.Component  {
 
   }
   handleSubmit2= _ => {
-    if(localStorage.getItem("isLogin")==="false"){
+    if(!localStorage.getItem("isLogin")){
       window.location.replace('/signin')
     }
     else{
@@ -43,7 +43,7 @@ export default class StarRating extends React.Component  {
     }
   };
   handleSubmit3= _ =>{
-    if(localStorage.getItem("isLogin")==="false"){
+    if(!localStorage.getItem("isLogin")){
       window.location.replace('/signin')
     }
     else{
@@ -57,7 +57,7 @@ export default class StarRating extends React.Component  {
     }
   }
    handleSubmit4= _ =>{
-    if(localStorage.getItem("isLogin")==="false"){
+    if(!localStorage.getItem("isLogin")){
       window.location.replace('/signin')
     }
     else{
@@ -72,7 +72,7 @@ export default class StarRating extends React.Component  {
     }
   }
   handleSubmit5= _ =>{
-    if(localStorage.getItem("isLogin")==="false"){
+    if(!localStorage.getItem("isLogin")){
       window.location.replace('/signin')
     }
     else{
@@ -178,9 +178,8 @@ export default class StarRating extends React.Component  {
   }
   }
 
-  render {
+  render (){
     return(
-
     <div className="rating-product" >
       <FontAwesomeIcon onClick={this.handleSubmit1} onMouseOver={this.onHover1}  onMouseOut={this.onOut1} className="icon-star" icon="star" color={this.state.color1} />
       <FontAwesomeIcon onClick={this.handleSubmit2} onMouseOver={this.onHover2}  onMouseOut={this.onOut2} className="icon-star" icon="star" color={this.state.color2} />
