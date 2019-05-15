@@ -5,7 +5,9 @@ export const UserContext = React.createContext();
 
 export default class UserProvider extends React.Component {
   constructor(props){
-    super(props)
+    super(props);
+
+    localStorage.setItem("checkLogin",false);
     this.state={
       isLogin : false,
       user_id        : "",
@@ -36,6 +38,8 @@ export default class UserProvider extends React.Component {
         })
         this.state.getListCart(user_id,JsonWebToken);
         localStorage.setItem("token", JsonWebToken);
+        localStorage.setItem("isLogin", true);
+
       },
       dispatchLogout : () => {
         this.setState({
@@ -51,6 +55,8 @@ export default class UserProvider extends React.Component {
           carts: [],
         })
         localStorage.removeItem("token");
+        localStorage.removeItem("isLogin");
+
       },
       getListCart : (user_id,token) => {
         console.log("@@@@@@@")
@@ -143,12 +149,17 @@ export default class UserProvider extends React.Component {
   }
 
 
-
   render(){
+
     return (
-      <UserContext.Provider value = {this.state}>
+      <div>
+      <UserContext.Provider value = {this.state} >
         {this.props.children}
       </UserContext.Provider>
+
+      </div>
+
+
     )
   }
 }
