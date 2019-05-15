@@ -11,7 +11,6 @@ const MenuNav = (props) => {
               <Link className="c-navBar__bottom-bar__menu__item" style={menuItemAnimation} to="/news"> News</Link>
               <Link className="c-navBar__bottom-bar__menu__item" style={menuItemAnimation} to="/contacts"> Contacts</Link>
               <Link className="c-navBar__bottom-bar__menu__item" style={menuItemAnimation} to="/FAQ"> FAQ</Link>
-              <Link className="c-navBar__bottom-bar__menu__item" style={menuItemAnimation} to="/sale"> Sale</Link>
         </div>
   </div>
     )

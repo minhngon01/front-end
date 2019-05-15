@@ -113,11 +113,11 @@ class SignUp extends React.Component{
           placeholder = "address"
           onChange = {this.handleInputChange}
         />
-        <div>
-          <input type="checkbox" name="male" checked={!this.state.is_female} onChange={this.handleChangeChk} />
-          male
-          <input type="checkbox" name="female" checked={this.state.is_female} onChange={this.handleChangeChk} />
-          female
+      <div className="my-3 ">
+          <input type="checkbox" name="male" className="mx-3" checked={!this.state.is_female} onChange={this.handleChangeChk} />
+          <span>male</span>
+          <input type="checkbox" name="female" className="mx-3"  checked={this.state.is_female} onChange={this.handleChangeChk} />
+          <span>female</span>
         </div>
         <div>{this.state.validate}</div>
         <button className="c-authentication__button" onClick={this.requestToServer}>Sign Up</button>
