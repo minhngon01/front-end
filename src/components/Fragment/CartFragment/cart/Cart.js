@@ -48,8 +48,11 @@ class Cart extends React.Component{
             <Link className="c-card--basic__name-product" to={"/product/"+product['product_id']}>{product['product_name']}</Link>
             <div className="c-card--basic__price">
               {'$'+product['product_price']}
+
             </div>
-            <StarRating />
+
+
+            <StarRating product_id={product['product_id']}/>
             <UserContext.Consumer>
               {
                 (state) =>   <div className="c-card--basic__button" onClick={this.checkSignIn(state.addToCart,product,state.isLogin)}>ADD TO CART</div>

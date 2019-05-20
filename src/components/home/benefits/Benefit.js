@@ -6,7 +6,6 @@ const Advertise = () => {
     return(
       <div className="container py-5">
            <div className="o-layout--4-col">
-
                      <div className="d-flex m-4 py-3">
                         <FontAwesomeIcon className="icon-cart pr-2" icon="home" size="3x" color=""/>
                          <div>

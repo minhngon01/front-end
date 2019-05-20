@@ -2,18 +2,27 @@ import React from 'react';
 import StarRating from '../../Fragment/StarRating/StarRating';
 import TimeCountDown from '../../Fragment/TimeCountDown/TimeCountDown';
 import Review from '../../Fragment/Review/Review';
-import axios from 'axios'
+import axios from 'axios';
 import { Transition, animated } from 'react-spring/renderprops';
 import {UserContext} from '../../../context/UserProvider';
-import  { Redirect } from 'react-router-dom'
+import  { Redirect } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-class DetailInfoProduct extends React.Component{
+export default class DetailInfoProduct extends React.Component{
   constructor(props){
     super(props);
     this.state = {
       detailProductInfo : {},
       index: 0 ,
-      directToLoginpage : false
+      directToLoginpage : false,
+      star :'',
+      numberofreviews : 0,
+      reviews : [],
+      review1star : 0,
+      review2star : 0,
+      review3star : 0,
+      review4star : 0,
+      review5star : 0
     }
   }
   async componentDidMount(){
@@ -25,10 +34,78 @@ class DetailInfoProduct extends React.Component{
       }
     })
     this.setState({detailProductInfo : detailProduct.data.products[0]})
-    // console.log("@@@", detailProduct);
+    var star = await axios({
+      method : 'post',
+      url    : "http://localhost:3003/rating/get-rate",
+      data   : {
+        user_id : localStorage.getItem('user_id'),
+        product_id : this.props.productid
+      }
+    })
+    if (star.data.rating=="" ){
+    }
+    else{
+    this.setState({
+      star : star.data.rating[0].product_rating
+      })
+    }
+    var product_rates = await axios({
+      method : 'post',
+      url    : "http://localhost:3003/rating/get-product-rates",
+      data   : {
+        product_id : this.props.productid
+      }
+    })
+    if (product_rates.data.product_rates ==""){
+    }
+    else{
+
+      this.setState({
+        numberofreviews: product_rates.data.product_rates.length,
+        reviews :  product_rates.data.product_rates
+      })
+      for (let i =0; i<this.state.numberofreviews;i++){
+        if (product_rates.data.product_rates[i].product_rating==1){
+          this.setState({
+            review1star : this.state.review1star+1
+          })
+        }
+        if (product_rates.data.product_rates[i].product_rating==2){
+          this.setState({
+            review2star : this.state.review2star+1
+          })
+        }
+        if (product_rates.data.product_rates[i].product_rating==3){
+          this.setState({
+            review3star : this.state.review3star+1
+          })
+        }
+        if (product_rates.data.product_rates[i].product_rating==4){
+          this.setState({
+            review4star : this.state.review4star+1
+          })
+        }
+        if (product_rates.data.product_rates[i].product_rating==5){
+          this.setState({
+            review5star : this.state.review5star+1
+          })
+        }
+      }
+    }
+
+
   }
-
-
+  AvgStar  = (s1,s2,s3,s4,s5,s6,s7,s8,s9,s10) => {
+    if (s1+s2+s3+s4+s5+s6+s7+s8+s9+s10 == 0){
+      return 'N/A';
+    }
+    else{
+    return (((s1+s6)*1+(s2+s7)*2+(s3+s8)*3+(s4+s9)*4+(s5+s10)*5)/(s1+s2+s3+s4+s5+s6+s7+s8+s9+s10)).toFixed(1);
+    }
+  }
+  TotalPeople = (s1,s2,s3,s4,s5,s6) => {
+    return s1+s2+s3+s4+s5+s6;
+  }
   toggle = numberIndex => e => {
     this.previousIndex = this.state.index;
     this.setState({index : numberIndex});
@@ -93,7 +170,7 @@ class DetailInfoProduct extends React.Component{
             <div className="col-sm-4 d-flex flex-column">
                 <b>Add a review</b>
                 Your Rating
-                <StarRating/>
+                <StarRating star = {this.state.star} />
                 <textarea className="my-2"placeholder="Your Review"/>
                 <input className="my-2" placeholder="Name *"/>
                 <input className="my-2" placeholder="Email *"/>
@@ -105,7 +182,7 @@ class DetailInfoProduct extends React.Component{
       )
     ]
 
-    console.log(info);
+
     return this.state.directToLoginpage ? <Redirect to="/signin"/> :
     (
       <div className="container my-4">
@@ -113,7 +190,7 @@ class DetailInfoProduct extends React.Component{
           <div className="col-sm-5 c-detail-product__image" style={imageProducts}/>
           <div className="col-sm-7">
             <h3 className="c-detail-product__name mt-3">{info.product_name}</h3>
-            <StarRating/>
+            <StarRating star = {this.state.star}/>
             <div className="d-flex flex-row mt-2">
               <div className="c-detail-product__price-sale">{"$"+info.product_price}</div>
               <div className="c-detail-product__price-actual">{info.sale_price ? "$"+info.sale_price : ""}</div>
@@ -147,7 +224,18 @@ class DetailInfoProduct extends React.Component{
             </div>
             <div>Add to Wishlist</div>
             <div>Compare</div>
+            <div className="avg-rate">
+                <div> {this.TotalPeople(info.amount_1_star,info.amount_2_star,info.amount_3_star,info.amount_4_star,info.amount_5_star,this.state.numberofreviews)} reviews </div>
+               <div> Rating <FontAwesomeIcon  icon="star" color="#FFED00" /> : {this.AvgStar(info.amount_1_star,info.amount_2_star,info.amount_3_star,info.amount_4_star,info.amount_5_star,
+               this.state.review1star,this.state.review2star,this.state.review3star,this.state.review4star,this.state.review5star)} </div>
+                <div> 1 <FontAwesomeIcon  icon="star" color="#FFED00" />   :  {info.amount_1_star+this.state.review1star} reviews </div>
+                <div> 2 <FontAwesomeIcon  icon="star" color="#FFED00" />   :  {info.amount_2_star+this.state.review2star} reviews </div>
+                <div> 3 <FontAwesomeIcon  icon="star" color="#FFED00" />   :  {info.amount_3_star+this.state.review3star} reviews </div>
+                <div> 4 <FontAwesomeIcon  icon="star" color="#FFED00" />   :  {info.amount_4_star+this.state.review4star} reviews </div>
+                <div> 5 <FontAwesomeIcon  icon="star" color="#FFED00" />   :  {info.amount_5_star+this.state.review5star} reviews </div>
+           </div>
           </div>
+
         </div>
 
         <div className="c-review">
@@ -183,5 +271,3 @@ class DetailInfoProduct extends React.Component{
     );
   }
 }
-
-export default DetailInfoProduct;

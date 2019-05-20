@@ -27,7 +27,7 @@ class Header extends Component{
     if (window.pageYOffset >= sticky) {
           !this.state.triggerScroolBar && this.setState({
               triggerScrollBar : {position : "fixed", top:"0"},
-              paddingTop : {marginTop : "130px"}
+              paddingTop : {marginTop : "180px"}
           });
     } else {
           this.state.triggerScrollBar && this.setState({

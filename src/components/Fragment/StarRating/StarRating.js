@@ -1,30 +1,76 @@
-
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import axios from 'axios';
 
 export default class StarRating extends React.Component  {
   constructor(props){
     super(props);
     this.state={
-      star: "",
+      star : this.props.star,
       submitted: false,
       color1:"DarkSlateGrey",
       color2:"DarkSlateGrey",
       color3:"DarkSlateGrey",
       color4:"DarkSlateGrey",
-      color5:"DarkSlateGrey"
+      color5:"DarkSlateGrey",
+      user : localStorage.getItem('user_id')
     };
   }
-
+   componentDidMount(){
+     if (this.state.star == 1){
+       this.setState({
+         color1 : '#FFED00'
+       })
+     }
+     if (this.state.star == 2){
+      this.setState({
+        color1 : '#FFED00',
+        color2 : '#FFED00',
+      })
+    }
+    if (this.state.star == 3){
+      this.setState({
+        color1 : '#FFED00',
+        color2 : '#FFED00',
+        color3 : '#FFED00'
+      })
+    }
+    if (this.state.star == 4){
+      this.setState({
+        color1 : '#FFED00',
+        color2 : '#FFED00',
+        color3 : '#FFED00',
+        color4 : '#FFED00'
+      })
+    }
+    if (this.state.star == 5){
+      this.setState({
+        color1 : '#FFED00',
+        color2 : '#FFED00',
+        color3 : '#FFED00',
+        color4 : '#FFED00',
+        color5 : '#FFED00'
+      })
+    }
+   }
   handleSubmit1= _ => {
     if(!localStorage.getItem("isLogin")){
       window.location.replace('/signin')
     }
     else{
     this.setState({
-      color1:'yellow',
-      submitted: true,
-      star : 1
+      color1:'#FFED00',
+      submitted: true
+    })
+    axios({
+      method: 'post',
+      url : 'http://localhost:3003/rating/star',
+      data : {
+        user_id : this.state.user ,
+        product_id : this.props.product_id,
+        product_rating : 1,
+      }
+
     })
   }
 
@@ -35,10 +81,19 @@ export default class StarRating extends React.Component  {
     }
     else{
     this.setState({
-      color1:'yellow',
-      color2:'yellow',
-      submitted: true,
-      star : 2
+      color1:'#FFED00',
+      color2:'#FFED00',
+      submitted: true
+    })
+    axios({
+      method: 'post',
+      url : 'http://localhost:3003/rating/star',
+      data : {
+        user_id : localStorage.getItem('user_id') ,
+        product_id : this.props.product_id,
+        product_rating : 2,
+      }
+
     })
     }
   };
@@ -48,11 +103,20 @@ export default class StarRating extends React.Component  {
     }
     else{
       this.setState({
-        color1:'yellow',
-        color2:'yellow',
-        color3:'yellow',
-        submitted: true,
-        star : 3
+        color1:'#FFED00',
+        color2:'#FFED00',
+        color3:'#FFED00',
+        submitted: true
+      })
+      axios({
+        method: 'post',
+        url : 'http://localhost:3003/rating/star',
+        data : {
+          user_id : localStorage.getItem('user_id') ,
+          product_id : this.props.product_id,
+          product_rating : 3,
+        }
+
       })
     }
   }
@@ -62,12 +126,21 @@ export default class StarRating extends React.Component  {
     }
     else{
       this.setState({
-        color1:'yellow',
-        color2:'yellow',
-        color3:'yellow',
-        color4:'yellow',
-        submitted: true,
-        star : 4
+        color1:'#FFED00',
+        color2:'#FFED00',
+        color3:'#FFED00',
+        color4:'#FFED00',
+        submitted: true
+      })
+      axios({
+        method: 'post',
+        url : 'http://localhost:3003/rating/star',
+        data : {
+          user_id : localStorage.getItem('user_id') ,
+          product_id : this.props.product_id,
+          product_rating : 4,
+        }
+
       })
     }
   }
@@ -77,55 +150,69 @@ export default class StarRating extends React.Component  {
     }
     else{
       this.setState({
-        color1:'yellow',
-        color2:'yellow',
-        color3:'yellow',
-        color4:'yellow',
-        color5:'yellow',
-        submitted: true,
-        star : 5
+        color1:'#FFED00',
+        color2:'#FFED00',
+        color3:'#FFED00',
+        color4:'#FFED00',
+        color5:'#FFED00',
+        submitted: true
+      })
+      axios({
+        method: 'post',
+        url : 'http://localhost:3003/rating/star',
+        data : {
+          user_id : localStorage.getItem('user_id') ,
+          product_id : this.props.product_id,
+          product_rating : 5,
+        }
+
       })
     }
   }
   onHover1= _ =>{
+    if (!this.state.submitted){
     this.setState({
-      color1:'yellow',
-      submitted: false
+      color1:'#FFED00'
     })
+  }
   }
   onHover2= _ =>{
+    if (!this.state.submitted){
     this.setState({
-      color1:'yellow',
-      color2:'yellow',
-      submitted: false
+      color1:'#FFED00',
+      color2:'#FFED00'
     })
+  }
   }
   onHover3= _ =>{
+    if (!this.state.submitted){
     this.setState({
-      color1:'yellow',
-      color2:'yellow',
-      color3:'yellow',
-      submitted: false
+      color1:'#FFED00',
+      color2:'#FFED00',
+      color3:'#FFED00'
     })
+  }
   }
   onHover4= _ =>{
+    if (!this.state.submitted){
     this.setState({
-      color1:'yellow',
-      color2:'yellow',
-      color3:'yellow',
-      color4:'yellow',
-      submitted: false
+      color1:'#FFED00',
+      color2:'#FFED00',
+      color3:'#FFED00',
+      color4:'#FFED00'
     })
   }
+  }
   onHover5= _ =>{
+    if (!this.state.submitted){
     this.setState({
-      color1:'yellow',
-      color2:'yellow',
-      color3:'yellow',
-      color4:'yellow',
-      color5:'yellow',
-      submitted: false
+      color1:'#FFED00',
+      color2:'#FFED00',
+      color3:'#FFED00',
+      color4:'#FFED00',
+      color5:'#FFED00'
     })
+  }
   }
   onOut1= _ =>{
     if (!this.state.submitted){
