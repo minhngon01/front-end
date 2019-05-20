@@ -15,7 +15,7 @@ class Search extends Component{
   render(){
     return(
       <React.Fragment>
-      <div className="c-navBar__middle-bar">
+      <div className="c-navBar__middle-bar mb-3">
           <Link to="/"><img className="c-navBar__middle-bar__logo"  src="https://devicer.cmsmasters.net/wp-content/uploads/2018/03/device-home-1-logo-retina.png" alt="Card image cap"/></Link>
           <div className="c-navBar__middle-bar__right">
             <div className="c-search-bar c-navBar__middle-bar__search">
