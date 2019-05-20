@@ -4,13 +4,11 @@ import Filter from './filter/Filter';
 import axios from 'axios';
 
 class Shop extends React.Component{
-
-
   render(){
     return(
       <div className="container my-5">
         <div className="o-layout--shop">
-            <ProductsPagination/>
+            <ProductsPagination location={this.props.location.state}  />
             <Filter/>
         </div>
     </div>
