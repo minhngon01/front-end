@@ -11,10 +11,11 @@ class ProductsPagination extends React.Component{
       data : [],
       offset : 0,
       pageCount : 5,
-      products : []
+      products : [],
     }
   }
   componentDidMount() {
+    
     axios({
       method : 'GET',
       url    : "http://localhost:3003/products/page-product",
@@ -23,8 +24,19 @@ class ProductsPagination extends React.Component{
       }
     })
     .then(products => {
-      this.setState({products : products.data.products})
+      
+      this.setState({products : products.data.products});
+     
     })
+    setTimeout(() => {
+      if (this.props.location){
+        this.setState({
+          products : this.props.location.products
+        })
+      }
+    },100)
+   
+   
   }
   handlePageClick = data => {
     axios({
@@ -42,7 +54,7 @@ class ProductsPagination extends React.Component{
   render(){
     return(
       <div className="products-shop">
-        <ShopProducts products={this.state.products}/>
+        <ShopProducts products={this.state.products}  />
         <ReactPaginate
           previousLabel={''}
           nextLabel={'>'}
