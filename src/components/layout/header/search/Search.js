@@ -19,18 +19,17 @@ class Search extends Component{
   onSubmit(event){
     event.preventDefault();
     var query = this.input.value;
-    
-    this.componentDidMount(query);
 
+    this.componentDidMoun(query);
   }
-  
-  componentDidMount(query){
+
+  componentDidMoun = (query) => {
     var api = 'http://localhost:3003/search/allcategory?product_name='
     axios.post('http://localhost:3003/search/allcategory',{
       product_name: query
     })
       .then(res => {
-    
+
     this.setState({products : res.data});
     console.log(this.state.products);
   })
@@ -44,10 +43,10 @@ class Search extends Component{
           <Link to="/"><img className="c-navBar__middle-bar__logo"  src="https://devicer.cmsmasters.net/wp-content/uploads/2018/03/device-home-1-logo-retina.png" alt="Card image cap"/></Link>
           <div className="c-navBar__middle-bar__right">
             <div className="c-search-bar c-navBar__middle-bar__search">
-                 
+
             <div class="selectdiv">
               <label>
-                  <select>
+                  <select className="c-search-bar__selection">
                       <option selected> All categories </option>
                       <option>Camera</option>
                       <option>Computer</option>
@@ -59,14 +58,14 @@ class Search extends Component{
             </div>
                 <form onSubmit = {this.onSubmit}>
                 <input type="text" className="c-search-bar__input" placeholder="Search for products" name="product_name"
-                ref = {input => this.input = input} 
+                ref = {input => this.input = input}
                  />
                  </form>
 
                 {this.state.products.length > 0 &&
                   <Redirect to={{
                     pathname: '/shop',
-                    state: { products: this.state.products }
+                    state: { products: this.state.products },
                   }}/>
                 }
             </div>
@@ -75,7 +74,7 @@ class Search extends Component{
             <div className="c-cart c-navBar__middle-bar__cart">
 
                   <div className="c-cart__icon">
-                    <div class="c-cart__number-productss">{state.carts.length}</div>
+                    <div class="c-cart__number-products">{state.carts.length}</div>
                     <FontAwesomeIcon className="icon-cart" icon="cart-plus" size="3x" color="DarkSlateGrey"/>
                   </div>
                   <div className="c-cart__your-cart">

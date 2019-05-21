@@ -39,8 +39,8 @@
     color: white;
     font-size : 80%;
     border-radius: 50%;
-    width:2vw;
-    height: 2vw;
+    width:20px;
+    height: 20px;
     position:absolute;
     align-items: center;
     top:-10%;
@@ -49,10 +49,10 @@
     display:flex;
     justify-content: center;
     @include mobile{
-        display: none;
+
     }
     @include tablet{
-        display: none;
+
     }
   }
   &__your-cart{
