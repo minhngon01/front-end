@@ -7,6 +7,7 @@ import { Transition, animated } from 'react-spring/renderprops';
 import {UserContext} from '../../../context/UserProvider';
 import  { Redirect } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import StarRatings from 'react-star-ratings';
 
 export default class DetailInfoProduct extends React.Component{
   constructor(props){
@@ -23,6 +24,7 @@ export default class DetailInfoProduct extends React.Component{
       review3star : 0,
       review4star : 0,
       review5star : 0
+
     }
   }
   async componentDidMount(){
@@ -59,7 +61,6 @@ export default class DetailInfoProduct extends React.Component{
     if (product_rates.data.product_rates ==""){
     }
     else{
-
       this.setState({
         numberofreviews: product_rates.data.product_rates.length,
         reviews :  product_rates.data.product_rates
@@ -96,12 +97,19 @@ export default class DetailInfoProduct extends React.Component{
 
   }
   AvgStar  = (s1,s2,s3,s4,s5,s6,s7,s8,s9,s10) => {
+    var check = (((s1+s6)*1+(s2+s7)*2+(s3+s8)*3+(s4+s9)*4+(s5+s10)*5)/(s1+s2+s3+s4+s5+s6+s7+s8+s9+s10));
     if (s1+s2+s3+s4+s5+s6+s7+s8+s9+s10 == 0){
-      return 'N/A';
+      return 0;
     }
     else{
-    return (((s1+s6)*1+(s2+s7)*2+(s3+s8)*3+(s4+s9)*4+(s5+s10)*5)/(s1+s2+s3+s4+s5+s6+s7+s8+s9+s10)).toFixed(1);
+      if (isNaN(check)){
+        return 0
+      }
+      else {
+        return check.toFixed(1);
+      }
     }
+
   }
   TotalPeople = (s1,s2,s3,s4,s5,s6) => {
     return s1+s2+s3+s4+s5+s6;
@@ -124,7 +132,8 @@ export default class DetailInfoProduct extends React.Component{
     let imageProducts = {
       backgroundImage : "url(" + info['product_image_url'] + ")"
     }
-
+    let  avgstar = parseFloat(this.AvgStar(info['amount_1_star'],info['amount_2_star'],info['amount_3_star'],info['amount_4_star'],info['amount_5_star'],
+        this.state.review1star,this.state.review2star,this.state.review3star,this.state.review4star,this.state.review5star))
     var productsTab = [
       style => (
         <animated.div style={{ ...style}}>
@@ -182,7 +191,6 @@ export default class DetailInfoProduct extends React.Component{
       )
     ]
 
-
     return this.state.directToLoginpage ? <Redirect to="/signin"/> :
     (
       <div className="container my-4">
@@ -190,7 +198,7 @@ export default class DetailInfoProduct extends React.Component{
           <div className="col-sm-5 c-detail-product__image" style={imageProducts}/>
           <div className="col-sm-7">
             <h3 className="c-detail-product__name mt-3">{info.product_name}</h3>
-            <StarRating star = {this.state.star}/>
+            <StarRatings rating = {avgstar} starRatedColor = '#FFED00' numberOfStars ={5}/>
             <div className="d-flex flex-row mt-2">
               <div className="c-detail-product__price-sale">{"$"+info.product_price}</div>
               <div className="c-detail-product__price-actual">{info.sale_price ? "$"+info.sale_price : ""}</div>
@@ -235,7 +243,6 @@ export default class DetailInfoProduct extends React.Component{
                 <div> 5 <FontAwesomeIcon  icon="star" color="#FFED00" />   :  {info.amount_5_star+this.state.review5star} reviews </div>
            </div>
           </div>
-
         </div>
 
         <div className="c-review">

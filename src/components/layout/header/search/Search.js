@@ -11,32 +11,29 @@ class Search extends Component{
   constructor(props){
     super(props);
     this.state={
-      products: []
+      products: [],
+      query : "",
     }
     this.onSubmit = this.onSubmit.bind(this);
   }
 
   onSubmit(event){
     event.preventDefault();
-    var query = this.input.value;
-
-    this.componentDidMoun(query);
+    // var query = this.input.value;
+    if(this.input.value.length == 0 ){
+      this.setState({query : " "});
+    }
+    else
+      this.setState({query : this.input.value});
+    // this.componentDidMoun(query);
   }
 
-  componentDidMoun = (query) => {
-    var api = 'http://localhost:3003/search/allcategory?product_name='
-    axios.post('http://localhost:3003/search/allcategory',{
-      product_name: query
-    })
-      .then(res => {
-
-    this.setState({products : res.data});
-    console.log(this.state.products);
-  })
-      .catch(error => console.log(error));
-  }
 
   render(){
+    if(this.state.query.length > 0) {
+      this.setState({query : ""})
+      return <Redirect to={"/search/"+this.state.query}/>
+    }
     return(
       <React.Fragment>
       <div className="c-navBar__middle-bar mb-3">
@@ -62,12 +59,6 @@ class Search extends Component{
                  />
                  </form>
 
-                {this.state.products.length > 0 &&
-                  <Redirect to={{
-                    pathname: '/shop',
-                    state: { products: this.state.products },
-                  }}/>
-                }
             </div>
             <UserContext.Consumer>
               { state =>

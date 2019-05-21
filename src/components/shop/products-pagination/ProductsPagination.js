@@ -12,10 +12,60 @@ class ProductsPagination extends React.Component{
       offset : 0,
       pageCount : 5,
       products : [],
+      keyWordSearch : "",
+    }
+  }
+  componentWillReceiveProps(nextProp){
+    this.state.keyWordSearch = nextProp.keyWordSearch
+    if(nextProp.keyWordSearch){
+      console.log(nextProp.keyWordSearch);
+      var api = 'http://localhost:3003/search/allcategory?product_name='
+      axios.post('http://localhost:3003/search/allcategory',{
+        product_name: nextProp.keyWordSearch
+      })
+        .then(res => {
+
+      this.setState({products : res.data,
+        keyWordSearch : " "
+      });
+
+      console.log(this.state.products);
+    })
+        .catch(error => console.log(error));
+    }
+    else{
+      axios({
+        method : 'GET',
+        url    : "http://localhost:3003/products/page-product",
+        params : {
+          offset : 0,
+        }
+      })
+      .then(products => {
+        this.setState({products : products.data.products,
+          keyWordSearch : " "
+        });
+      })
     }
   }
   componentDidMount() {
-    
+    console.log("here");
+    if(this.props.keyWordSearch){
+      console.log(this.props.keyWordSearch);
+      var api = 'http://localhost:3003/search/allcategory?product_name='
+      axios.post('http://localhost:3003/search/allcategory',{
+        product_name: this.props.keyWordSearch
+      })
+        .then(res => {
+
+      this.setState({products : res.data,
+        keyWordSearch : " "
+      });
+      console.log(this.state.products);
+    })
+        .catch(error => console.log(error));
+    }
+    else{
     axios({
       method : 'GET',
       url    : "http://localhost:3003/products/page-product",
@@ -24,19 +74,10 @@ class ProductsPagination extends React.Component{
       }
     })
     .then(products => {
-      
       this.setState({products : products.data.products});
-     
     })
-    setTimeout(() => {
-      if (this.props.location){
-        this.setState({
-          products : this.props.location.products
-        })
-      }
-    },100)
-   
-   
+  }
+
   }
   handlePageClick = data => {
     axios({

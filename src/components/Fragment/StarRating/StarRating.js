@@ -19,20 +19,23 @@ export default class StarRating extends React.Component  {
    componentDidMount(){
      if (this.state.star == 1){
        this.setState({
-         color1 : '#FFED00'
+         color1 : '#FFED00',
+         submitted : true
        })
      }
      if (this.state.star == 2){
       this.setState({
         color1 : '#FFED00',
         color2 : '#FFED00',
+        submitted : true
       })
     }
     if (this.state.star == 3){
       this.setState({
         color1 : '#FFED00',
         color2 : '#FFED00',
-        color3 : '#FFED00'
+        color3 : '#FFED00',
+        submitted : true
       })
     }
     if (this.state.star == 4){
@@ -40,7 +43,8 @@ export default class StarRating extends React.Component  {
         color1 : '#FFED00',
         color2 : '#FFED00',
         color3 : '#FFED00',
-        color4 : '#FFED00'
+        color4 : '#FFED00',
+        submitted : true
       })
     }
     if (this.state.star == 5){
@@ -49,11 +53,21 @@ export default class StarRating extends React.Component  {
         color2 : '#FFED00',
         color3 : '#FFED00',
         color4 : '#FFED00',
-        color5 : '#FFED00'
+        color5 : '#FFED00',
+        submitted : true
       })
     }
    }
   handleSubmit1= _ => {
+
+    if (this.state.submitted == true){
+      this.setState({
+        color2:"DarkSlateGrey",
+      color3:"DarkSlateGrey",
+      color4:"DarkSlateGrey",
+      color5:"DarkSlateGrey"
+      })
+    }
     if(!localStorage.getItem("isLogin")){
       window.location.replace('/signin')
     }
@@ -62,6 +76,7 @@ export default class StarRating extends React.Component  {
       color1:'#FFED00',
       submitted: true
     })
+
     axios({
       method: 'post',
       url : 'http://localhost:3003/rating/star',
@@ -76,6 +91,14 @@ export default class StarRating extends React.Component  {
 
   }
   handleSubmit2= _ => {
+
+    if (this.state.submitted == true){
+      this.setState({
+      color3:"DarkSlateGrey",
+      color4:"DarkSlateGrey",
+      color5:"DarkSlateGrey"
+      })
+    }
     if(!localStorage.getItem("isLogin")){
       window.location.replace('/signin')
     }
@@ -85,6 +108,7 @@ export default class StarRating extends React.Component  {
       color2:'#FFED00',
       submitted: true
     })
+
     axios({
       method: 'post',
       url : 'http://localhost:3003/rating/star',
@@ -98,6 +122,13 @@ export default class StarRating extends React.Component  {
     }
   };
   handleSubmit3= _ =>{
+
+    if (this.state.submitted == true){
+      this.setState({
+      color4:"DarkSlateGrey",
+      color5:"DarkSlateGrey"
+      })
+    }
     if(!localStorage.getItem("isLogin")){
       window.location.replace('/signin')
     }
@@ -108,6 +139,7 @@ export default class StarRating extends React.Component  {
         color3:'#FFED00',
         submitted: true
       })
+
       axios({
         method: 'post',
         url : 'http://localhost:3003/rating/star',
@@ -116,11 +148,16 @@ export default class StarRating extends React.Component  {
           product_id : this.props.product_id,
           product_rating : 3,
         }
-
       })
     }
   }
    handleSubmit4= _ =>{
+
+    if (this.state.submitted == true){
+      this.setState({
+      color5:"DarkSlateGrey"
+      })
+    }
     if(!localStorage.getItem("isLogin")){
       window.location.replace('/signin')
     }
@@ -132,6 +169,7 @@ export default class StarRating extends React.Component  {
         color4:'#FFED00',
         submitted: true
       })
+
       axios({
         method: 'post',
         url : 'http://localhost:3003/rating/star',
@@ -140,11 +178,11 @@ export default class StarRating extends React.Component  {
           product_id : this.props.product_id,
           product_rating : 4,
         }
-
       })
     }
   }
   handleSubmit5= _ =>{
+
     if(!localStorage.getItem("isLogin")){
       window.location.replace('/signin')
     }
@@ -157,6 +195,7 @@ export default class StarRating extends React.Component  {
         color5:'#FFED00',
         submitted: true
       })
+
       axios({
         method: 'post',
         url : 'http://localhost:3003/rating/star',
@@ -165,7 +204,6 @@ export default class StarRating extends React.Component  {
           product_id : this.props.product_id,
           product_rating : 5,
         }
-
       })
     }
   }

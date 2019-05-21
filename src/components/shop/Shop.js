@@ -4,11 +4,28 @@ import Filter from './filter/Filter';
 import axios from 'axios';
 
 class Shop extends React.Component{
+  constructor(props){
+    super(props);
+    this.state = {
+      query : "",
+    }
+  }
+  componentWillMount(){
+    if(this.props.match.params.id ){
+      this.setState({query :this.props.match.params.id});
+    }
+  }
+  componentWillReceiveProps(nextProps){
+    if(nextProps.match.params.id ){
+      this.setState({query :nextProps.match.params.id});
+    }
+  }
   render(){
+    console.log("here");
     return(
       <div className="container my-5">
         <div className="o-layout--shop">
-            <ProductsPagination location={this.props.location.state}  />
+            <ProductsPagination  keyWordSearch = {this.state.query}/>
             <Filter/>
         </div>
     </div>
