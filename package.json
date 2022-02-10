@@ -15,7 +15,7 @@
     "jquery-ui": "^1.12.1",
     "jquery-ui-bundle": "^1.12.1-migrate",
     "jsonwebtoken": "^8.5.1",
-    "node-sass": "^4.11.0",
+    "node-sass": "^7.0.0",
     "nouislider": "^13.1.4",
     "npm": "^6.9.0",
     "rc-slider": "^8.6.7",
